@@ -4,7 +4,7 @@ public class Suggestions {
 	private String content;
 	private String reply;
 	private String camp;
-	private boolean Accepted = 0;
+	private boolean Accepted = false;
 
 	public String getStudentName() {
 		return this.studentName;
