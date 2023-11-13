@@ -1,19 +1,18 @@
+import java.util.ArrayList;
 public class CampDatabase {
 
 	private ArrayList<Camp> allCamps;
 
+	CampDatabase(){
+		this.allCamps=new ArrayList<>();
+	}
 	public ArrayList<Camp> getCamps() {
-		// TODO - implement CampDatabase.getCamps
-		throw new UnsupportedOperationException();
+		return allCamps;
 	}
 
-	/**
-	 * 
-	 * @param aCamp
-	 */
-	public void addCamps(Camp aCamp) {
-		// TODO - implement CampDatabase.addCamps
-		throw new UnsupportedOperationException();
+	public void addCamps() {
+		Camp aCamp=new Camp();
+		this.allCamps.add(aCamp);
 	}
 
 }

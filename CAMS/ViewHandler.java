@@ -1,5 +1,5 @@
+import java.util.*;
 class ViewHandler {
-
 	public void viewAvailable() {
 		// TODO - implement ViewHandler.viewAvailable
 		throw new UnsupportedOperationException();
@@ -9,5 +9,4 @@ class ViewHandler {
 		// TODO - implement ViewHandler.viewAll
 		throw new UnsupportedOperationException();
 	}
-
 }

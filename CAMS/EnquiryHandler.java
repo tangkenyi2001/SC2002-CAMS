@@ -18,9 +18,10 @@ public class EnquiryHandler {
 	 * 
 	 * @param student
 	 */
-	public void view(Student student) {
-		// TODO - implement EnquiryHandler.view
-		throw new UnsupportedOperationException();
+	public static void view(Student student) {
+		for(int i = 0; i < student.getEnquiries().size(); i++){
+			System.out.println((i+1) + " " + student.getEnquiries().get(i).getContent());
+		}
 	}
 
 	/**
@@ -36,14 +37,14 @@ public class EnquiryHandler {
 	 * 
 	 * @param e
 	 */
-	public void submitEnquiry(String e) {
-		// TODO - implement EnquiryHandler.submitEnquiry
-		throw new UnsupportedOperationException();
+	public static void submitEnquiry(Student student, String content, Camp camp) {
+		Enquiry enquiry = new Enquiry(student.getname(), content, camp);
+		camp.addEnquiry(enquiry);
+		student.getEnquiries().add(enquiry);
 	}
 
-	public void deleteEnquiry() {
-		// TODO - implement EnquiryHandler.deleteEnquiry
-		throw new UnsupportedOperationException();
+	public static void deleteEnquiry(Enquiry enquiry) {
+		
 	}
 
 }

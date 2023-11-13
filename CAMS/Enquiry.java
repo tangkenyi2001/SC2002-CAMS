@@ -1,10 +1,18 @@
-public class Suggestions {
+public class Enquiry{
 
 	private String studentName;
 	private String content;
 	private String reply;
 	private String camp;
-	private boolean Accepted = false;
+	private boolean processed;
+
+	public Enquiry(String name, String content, Camp camp){
+		this.studentName = name;
+		this.content = content;
+		this.camp = camp.getCampInfo().getCampName();
+		this.reply = null;
+		this.processed = false;
+	}
 
 	public String getStudentName() {
 		return this.studentName;
@@ -54,4 +62,7 @@ public class Suggestions {
 		this.camp = String;
 	}
 
+	public void setProcessedTrue(){
+		this.processed = true;
+	}
 }
