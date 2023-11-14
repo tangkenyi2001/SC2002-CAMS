@@ -22,7 +22,7 @@ public class RegistrationHandler {
 				camp.getCampInfo().minusCommitteeSlots();
 				camp.getCampInfo().minusSlot();
 				CampCommittee committee = new CampCommittee(camp);
-				student.setCampCommitee(committee);
+				student.setCampCommittee(committee);
 				camp.addCommittee(student);
 				//Should we add?
 				//student.getRegisteredCamps().add(camp);
