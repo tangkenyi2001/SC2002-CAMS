@@ -1,40 +1,33 @@
+import java.util.*;
+
 public class Staff extends User {
 
-	private ArrayList<Camp> createdCamps;
+	private ArrayList<Camp> createdCamps = new ArrayList<>();
 
-	public Staff() {
-		// TODO - implement Staff.Staff
-		throw new UnsupportedOperationException();
+	// default constructor when staff is first initialised
+	public Staff(String id, String name, String password, String faculty) {
+		super(id,name,password,faculty);
 	}
-
-	public void viewAllCamps() {
-		// TODO - implement Staff.viewAllCamps
-		throw new UnsupportedOperationException();
-	}
+	
+	// need to have constructor for existing user
+	
 
 	public void viewCreatedCamps() {
-		// TODO - implement Staff.viewCreatedCamps
-		throw new UnsupportedOperationException();
+		if (createdCamps.isEmpty()) {
+            System.out.println("No camps created yet.");
+        } else {
+            System.out.println("List of Created Camps:");
+            for (Camp camp : createdCamps) {
+                System.out.println("Camp Name: " + camp.getCampInfo().getCampName());
+			}
+		}
+	}
+	
+	public void addToCreatedCamps(Camp aCamp){
+		createdCamps.add(aCamp);
 	}
 
-	/**
-	 * 
-	 * @param aCamp
-	 * @param message
-	 */
-	public void replyEnquiries(Camp aCamp, String message) {
-		// TODO - implement Staff.replyEnquiries
-		throw new UnsupportedOperationException();
+	public ArrayList<Camp> getCreatedCamps(){
+		return createdCamps;
 	}
-
-	/**
-	 * 
-	 * @param aCamp
-	 * @param message
-	 */
-	public void approveSuggestions(Camp aCamp, String message) {
-		// TODO - implement Staff.approveSuggestions
-		throw new UnsupportedOperationException();
-	}
-
 }

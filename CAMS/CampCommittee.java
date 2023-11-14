@@ -1,20 +1,11 @@
-public class CampCommittee extends Student {
-
-	private Camp ComitteeOf;
-
-	/**
-	 * 
-	 * @param camp
-	 */
+public class CampCommittee{
+	private Camp CommitteeOf;
+	private int points;
 	public CampCommittee(Camp camp) {
-		// TODO - implement CampCommittee.CampCommittee
-		throw new UnsupportedOperationException();
+		this.CommitteeOf = camp;
 	}
 
-	/**
-	 * call a class to print out all options for committtee
-	 */
-	public void printComitteeMenu() {
+	public void printCommitteeMenu() {
 		// TODO - implement CampCommittee.printComitteeMenu
 		throw new UnsupportedOperationException();
 	}
@@ -25,8 +16,15 @@ public class CampCommittee extends Student {
 	}
 
 	public Camp getCommitteeOf() {
-		// TODO - implement CampCommittee.getCommitteeOf
-		throw new UnsupportedOperationException();
+		return this.CommitteeOf;
 	}
-
+	public void addPoints(){
+		this.points++;
+	}
+	public void setPoints(int points){
+		this.points = points;
+	}
+	public int getPoints(){
+		return this.points;
+	}
 }
