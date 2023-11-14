@@ -1,4 +1,5 @@
 public class main {
+
     public static void main(String arg[]) {
        /* CampDatabase camper=new CampDatabase();
         camper.addCamps();
@@ -7,6 +8,7 @@ public class main {
         CampDatabase a = new CampDatabase();
         Staff aStaff = new Staff("thor" , "thor", "thor", "thor");
         StaffMenu.printMenu(aStaff, CampDatabase.getCamps());
+
 
     }
 }

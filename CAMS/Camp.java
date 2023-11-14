@@ -6,7 +6,9 @@ public class Camp {
 	private ArrayList<Student> attendees;
 	private ArrayList<Student> campCommittees;
 	private boolean visibility = false;
-	private ArrayList<Enquiry> campEnquiries;
+
+	private ArrayList<Enquiries> campEnquiries;
+
 	private ArrayList<Suggestions> campSuggestions;
 
 	public Camp() {
@@ -29,6 +31,8 @@ public class Camp {
 	public void addAttendees(Student name) {
 		this.attendees.add(name);
 	}
+
+
 	public ArrayList<Student> getCommittee() {
 		return this.campCommittees;
 	}
@@ -46,7 +50,8 @@ public class Camp {
         this.visibility = visibility;
     }
 
-	public ArrayList<Enquiry> getEnquiries() {
+	public ArrayList<Enquiries> getEnquiries() {
+
         return this.campEnquiries;
     }
 
@@ -54,7 +59,9 @@ public class Camp {
         return this.campSuggestions;
     }
 
-	public void addEnquiry(Enquiry anEnquiry) {
+
+	public void addEnquiry(Enquiries anEnquiry) {
+
         this.campEnquiries.add(anEnquiry);
     }
 

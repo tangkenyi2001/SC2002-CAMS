@@ -17,6 +17,6 @@ public class CampDatabase {
 
 	public static void addCamps(Camp aCamp) {
 		allCamps.add(aCamp);
-	}
+
 
 }
