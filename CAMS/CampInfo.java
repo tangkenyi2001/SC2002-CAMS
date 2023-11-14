@@ -60,22 +60,25 @@ public class CampInfo {
     }
     public String getCampName() {
 		// TODO - implement campInformation.getCampNames
+
 		return this.campName;
 	}
 
 	public void setCampName() {
+
 		// TODO - implement campInformation.setCampName
 		Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Camp Name: ");
             this.campName=(scanner.next().toUpperCase());
 	}
 
+
 	public LocalDate getStartDate() {
 		// TODO - implement campInformation.getDates
 		return this.startDate;
 	}
 	public LocalDate getEndDate() {
-		// TODO - implement campInformation.getDates
+
 		return this.endDate;
 	}
 	public void setStartDate() {
@@ -92,6 +95,7 @@ public class CampInfo {
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");  
             this.endDate = LocalDate.parse(endDateStr, formatter);  
 	}
+
 
 	public LocalDate getDeadline() {
 		// TODO - implement campInformation.getDeadline
@@ -187,5 +191,4 @@ public class CampInfo {
     
         
     
-
 }

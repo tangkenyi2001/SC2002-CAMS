@@ -6,7 +6,9 @@ public class Camp {
 	private ArrayList<Student> attendees;
 	private ArrayList<Student> campCommittees;
 	private boolean visibility = false;
+
 	private ArrayList<Enquiries> campEnquiries;
+
 	private ArrayList<Suggestions> campSuggestions;
 
 	public Camp() {
@@ -30,6 +32,7 @@ public class Camp {
 		this.attendees.add(name);
 	}
 
+
 	public ArrayList<Student> getCommittee() {
 		return this.campCommittees;
 	}
@@ -48,6 +51,7 @@ public class Camp {
     }
 
 	public ArrayList<Enquiries> getEnquiries() {
+
         return this.campEnquiries;
     }
 
@@ -55,7 +59,9 @@ public class Camp {
         return this.campSuggestions;
     }
 
+
 	public void addEnquiry(Enquiries anEnquiry) {
+
         this.campEnquiries.add(anEnquiry);
     }
 
@@ -66,13 +72,13 @@ public class Camp {
 	public void printAttendees() {
         System.out.println("Attendees: ");
         for (Student attendee : attendees) {
-            System.out.println(attendee.getname());
+            System.out.println(attendee.getName());
         }
     }
 	public void printCommitteeMembers() {
         System.out.println("Committee Members: ");
         for (Student committeeMember : campCommittees) {
-            System.out.println(committeeMember.getname());
+            System.out.println(committeeMember.getName());
         }
     }
 }
