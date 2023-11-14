@@ -1,3 +1,4 @@
+import java.util.*;
 public class EnquiryHandler {
 
 	public void reply() {
@@ -20,8 +21,11 @@ public class EnquiryHandler {
 	 */
 	public static void view(Student student) {
 		for(int i = 0; i < student.getEnquiries().size(); i++){
-			System.out.println((i+1) + " " + student.getEnquiries().get(i).getContent());
-		}
+			Enquiry enquiry = student.getEnquiries().get(i);
+			if(!enquiry.getProcessed()){
+				System.out.println((i+1) + " " + enquiry.getContent());
+			}
+		}	
 	}
 
 	/**
@@ -38,13 +42,14 @@ public class EnquiryHandler {
 	 * @param e
 	 */
 	public static void submitEnquiry(Student student, String content, Camp camp) {
-		Enquiry enquiry = new Enquiry(student.getname(), content, camp);
+		Enquiry enquiry = new Enquiry(student.getName(), content, camp);
 		camp.addEnquiry(enquiry);
 		student.getEnquiries().add(enquiry);
 	}
 
-	public static void deleteEnquiry(Enquiry enquiry) {
-		
-	}
+	public static void deleteEnquiry(Enquiry enquiry, ArrayList<Camp> campList) {
+		if(!enquiry.getProcessed()){
 
+		}
+	}
 }

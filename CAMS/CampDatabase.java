@@ -1,18 +1,22 @@
 import java.util.ArrayList;
 public class CampDatabase {
 
-	private ArrayList<Camp> allCamps;
+	private static ArrayList<Camp> allCamps;
 
-	CampDatabase(){
+	public CampDatabase(){
 		this.allCamps=new ArrayList<>();
 	}
-	public ArrayList<Camp> getCamps() {
+
+	public CampDatabase(int file){ //constructor for loading in a database file
+
+	}
+
+	public static ArrayList<Camp> getCamps() {
 		return allCamps;
 	}
 
-	public void addCamps() {
-		Camp aCamp=new Camp();
-		this.allCamps.add(aCamp);
+	public static void addCamps(Camp aCamp) {
+		allCamps.add(aCamp);
 	}
 
 }

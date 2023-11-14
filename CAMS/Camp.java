@@ -8,7 +8,7 @@ public class Camp {
 	private boolean visibility = false;
 	private ArrayList<Enquiry> campEnquiries;
 	private ArrayList<Suggestions> campSuggestions;
-
+	private ArrayList<Student> blackList;
 	public Camp() {
 		this.campInformation = new CampInfo();
         this.attendees = new ArrayList<>();
@@ -16,6 +16,7 @@ public class Camp {
         this.visibility = false; // Default visibility is false
         this.campEnquiries = new ArrayList<>();
         this.campSuggestions = new ArrayList<>();
+		this.blackList = new ArrayList<>();
 	}
 
 	public CampInfo getCampInfo(){
@@ -65,13 +66,19 @@ public class Camp {
 	public void printAttendees() {
         System.out.println("Attendees: ");
         for (Student attendee : attendees) {
-            System.out.println(attendee.getname());
+            System.out.println(attendee.getName());
         }
     }
 	public void printCommitteeMembers() {
         System.out.println("Committee Members: ");
         for (Student committeeMember : campCommittees) {
-            System.out.println(committeeMember.getname());
+            System.out.println(committeeMember.getName());
         }
     }
+	public void addBlackList(Student student) {
+		this.blackList.add(student);
+	}
+	public ArrayList<Student> getBlackList() {
+		return this.blackList;
+	}
 }

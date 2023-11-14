@@ -5,56 +5,45 @@ public class User {
 	private String password;
 	private String faculty;
 
-	public User() {
-		// TODO - implement User.User
-		throw new UnsupportedOperationException();
+	public User(String id, String name, String password, String faculty) {
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.faculty = faculty;
 	}
 
-	public String getid() {
-		return this.id;
+	public String getId() {
+		return id;
 	}
 
-	/**
-	 * 
-	 * @param ID
-	 */
-	public void setid(String ID) {
+	public void setId(String ID) {
 		this.id = ID;
 	}
 
-	public String getname() {
+	public String getName() {
 		return this.name;
 	}
 
-	/**
-	 * 
-	 * @param Name
-	 */
-	public void setname(String Name) {
+
+	public void setName(String Name) {
 		this.name = Name;
 	}
 
-	public String getpassword() {
+	public String getPassword() {
 		return this.password;
 	}
 
-	/**
-	 * 
-	 * @param Password                         
-	 */
-	public void setpassword(String Password) {
+
+	public void setPassword(String Password) {
 		this.password = Password;
 	}
 
-	public String getfaculty() {
+	public String getFaculty() {
 		return this.faculty;
 	}
 
-	/**
-	 * 
-	 * @param Faculty
-	 */
-	public void setfaculty(String Faculty) {
+
+	public void setFaculty(String Faculty) {
 		this.faculty = Faculty;
 	}
 

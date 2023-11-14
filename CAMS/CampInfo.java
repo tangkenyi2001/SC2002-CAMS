@@ -59,23 +59,19 @@ public class CampInfo {
         
     }
     public String getCampName() {
-		// TODO - implement campInformation.getCampNames
 		return this.campName;
 	}
 
 	public void setCampName() {
-		// TODO - implement campInformation.setCampName
 		Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Camp Name: ");
             this.campName=(scanner.next().toUpperCase());
 	}
 
 	public LocalDate getStartDate() {
-		// TODO - implement campInformation.getDates
 		return this.startDate;
 	}
 	public LocalDate getEndDate() {
-		// TODO - implement campInformation.getDates
 		return this.endDate;
 	}
 	public void setStartDate() {
@@ -108,12 +104,10 @@ public class CampInfo {
 	}
 
 	public int getTotalSlots() {
-		// TODO - implement campInformation.getTotalSlots
 		return this.totalSlots;
 	}
 
 	public void setTotalSlots() {
-		// TODO - implement campInformation.setTotalSlots
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Total Slots: ");
             this.totalSlots=scanner.nextInt();
@@ -128,12 +122,10 @@ public class CampInfo {
 		this.campCommitteeSlots--;
 	}
 	public int getCommitteeSlots() {
-		// TODO - implement campInformation.getCommitteeSlots
 		return this.campCommitteeSlots;
 	}
 
 	public void setCommitteeSlots() {
-		// TODO - implement campInformation.setCommitteeSlots
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Number of Camp Committee Slots: ");   
             this.campCommitteeSlots=scanner.nextInt();
@@ -141,19 +133,16 @@ public class CampInfo {
 	}
 
 	public String getStaffIC() {
-		// TODO - implement campInformation.getStaffIC
 		return this.staffInCharge;
 	}
 
 	public void setStaffIC() {
-		// TODO - implement campInformation.setStaffIC
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter StaffInCharge ");
             this.staffInCharge=scanner.next().toUpperCase();
 	}
 
 	public int getAttendeeSlots() {
-		// TODO - implement campInformation.getAttendeeSlot
 		return this.totalSlots-this.campCommitteeSlots;
 	}
 

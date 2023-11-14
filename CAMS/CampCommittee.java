@@ -10,7 +10,7 @@ public class CampCommittee{
 		throw new UnsupportedOperationException();
 	}
 
-	public void PrintCommitteeOf() {
+	public void printCommitteeOf() {
 		// TODO - implement CampCommittee.PrintCommitteeOf
 		throw new UnsupportedOperationException();
 	}
