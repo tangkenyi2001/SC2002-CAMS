@@ -72,13 +72,13 @@ public class Camp {
 	public void printAttendees() {
         System.out.println("Attendees: ");
         for (Student attendee : attendees) {
-            System.out.println(attendee.getname());
+            System.out.println(attendee.getName());
         }
     }
 	public void printCommitteeMembers() {
         System.out.println("Committee Members: ");
         for (Student committeeMember : campCommittees) {
-            System.out.println(committeeMember.getname());
+            System.out.println(committeeMember.getName());
         }
     }
 }
