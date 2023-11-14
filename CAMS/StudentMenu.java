@@ -8,8 +8,13 @@ public class StudentMenu implements mainMenu {
             System.out.println("(2) View Registered Camps");
             System.out.println("(3) View Enquiries");
             System.out.println("(4) Change password");
-            System.out.println("(5) Exit");
+            System.out.println("(5) Exit"); //Might need to change position based on committee actions
             System.out.println("Enter choice: ");
+            /*if(student.getCommittee){
+                System.out.println((6) committee action 1);
+                System.out.println((7) committee action 2);
+            }
+            */
             choice = sc.nextInt();
             switch(choice){
                 case 1:
@@ -20,7 +25,9 @@ public class StudentMenu implements mainMenu {
                     break;
                 case 3:
                     ViewEnquiryMenu.menu(student, campList);
-                    //change password
+                    break;
+                case 4:
+                    PasswordHandler.changePassword(student);
                     break;
                 default:
                     break;

@@ -65,4 +65,8 @@ public class Enquiry{
 	public void setProcessedTrue(){
 		this.processed = true;
 	}
+
+	public boolean getProcessed(){
+		return this.processed;
+	}
 }

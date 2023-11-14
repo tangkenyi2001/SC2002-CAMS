@@ -15,21 +15,21 @@ public class ViewCampMenu{
             Camp camp;
             switch(choice){
                 case 1:
-                    //PrintCamp.printSlots(campList);
+                    ViewHandler.viewAvailableSlots(student);
                     break;
                 case 2:
-                    //Print camps
+                    ArrayList<Camp> availableCamps2 = ViewHandler.viewRegisterAvailable(student);
                     System.out.println("Select camp to register for: ");
                     choice = sc.nextInt();
-                    camp = campList.get(choice);
+                    camp = availableCamps2.get(choice -1);
                     RegistrationHandler.registerCamp(student, camp);
-                    System.out.println("Registerd for camp " + camp.getCampInfo().getCampName() + ".");
+                    System.out.println("Registered for camp " + camp.getCampInfo().getCampName() + ".");
                     break;
                 case 3:
-                    //Print camps
+                    ArrayList<Camp> enquiryCamps = ViewHandler.viewEnquiryAvailable(student);
                     System.out.println("Select camp to submit enquiry for: ");
                     choice = sc.nextInt();
-                    camp = campList.get(choice);
+                    camp = enquiryCamps.get(choice - 1);
                     System.out.println("Enter Enquiry: ");
                     String content = sc.next();
                     EnquiryHandler.submitEnquiry(student, content, camp);

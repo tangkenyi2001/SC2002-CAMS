@@ -16,7 +16,10 @@ public class ViewEnquiryMenu {
                     //EnquiryHandler.editEnquiry
                     break;
                 case 2:
-                    //EnquiryHandler.deleteEnquiry
+                    EnquiryHandler.view(student);
+                    System.out.println("Choose enquiry to delete: ");
+                    choice = sc.nextInt();
+                    //EnquiryHandler.returnEnquiry(choice-1);
                     break;
                 default:
                     break;
