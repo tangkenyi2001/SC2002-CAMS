@@ -4,7 +4,7 @@ public class Enquiries {
 	private String content;
 	private String reply;
 	private String camp;
-	private boolean processed = 0;
+	private boolean processed = false;
 
 	public String getStudentName() {
 		return this.studentName;
