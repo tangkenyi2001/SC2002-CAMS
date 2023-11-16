@@ -7,6 +7,7 @@ public class Student extends User {
 		super(id,name,password,faculty);
 		this.registeredCamps = new ArrayList<>();
     	this.submittedEnquiries = new ArrayList<>();
+		this.Committee = null;
 	}
 	public void viewRegistered() {
 		System.out.println("Registered Camps: ");
@@ -31,5 +32,8 @@ public class Student extends User {
 	}
 	public ArrayList<Enquiry> getEnquiries(){
 		return this.submittedEnquiries;
+	}
+	public boolean isCommitee(){
+		return this.Committee == null;
 	}
 }

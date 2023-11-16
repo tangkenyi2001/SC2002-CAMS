@@ -1,7 +1,7 @@
 import java.util.*;
 class ViewHandler {
 	//Prints camps camp can register for
-	public static ArrayList<Camp> viewRegisterAvailable(camp student){
+	public static ArrayList<Camp> viewRegisterAvailable(Student student){
 		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
 		ArrayList<Camp> availableCamps = new ArrayList<>();
 		Camp camp;

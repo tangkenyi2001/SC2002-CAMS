@@ -42,7 +42,6 @@ public class StaffMenu {
                     i = sc.nextInt()-1;
                     CampModifier.deleteCamp(aStaff,i);
                     break;
-
                 case 6: PasswordHandler.changePassword(aStaff);
                         break;
             }

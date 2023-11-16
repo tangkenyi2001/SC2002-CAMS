@@ -1,7 +1,7 @@
 import java.util.*;
 public class EnquiryHandler {
-
-	public void replyEnquiry(Enquiry enquiry) {
+	public static void replyEnquiry(Enquiry enquiry) {
+		Scanner sc = new Scanner(System.in);
 		if(!enquiry.getProcessed()){
 			System.out.println("Enter reply: ");
 			String newReply = sc.next();
@@ -12,6 +12,7 @@ public class EnquiryHandler {
 	}
 
 	public static void editEnquiry(Enquiry enquiry, Student student){
+		Scanner sc = new Scanner(System.in);
 		if(!enquiry.getProcessed()){
 			System.out.println("Enter edited enquiry: ");
 			String newContent = sc.next();
@@ -29,12 +30,14 @@ public class EnquiryHandler {
 
 	public static void deleteEnquiry(Enquiry enquiry, Student student){
 		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
-		String name = enquiry.getCampName();
+		String name = enquiry.getCamp();
 		int i = 0;
 		//See .filter if loop too clunky
 		if(!enquiry.getProcessed()){
-			for (i = 0; i < list.size(); i++) {
-				if (campList.get(i).getCampInfo().getCampName().equals(name)){
+			Camp camp;
+			for (i = 0; i < campList.size(); i++) {
+				camp = campList.get(i);
+				if (camp.getCampInfo().getCampName().equals(name)){
 					break;
 				}
 			}
