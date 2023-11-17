@@ -4,7 +4,7 @@ public class Suggestions {
 	private String content;
 	private String reply;
 	private String camp;
-	private boolean Accepted = false;
+	private boolean accepted = false;
 
 	public String getStudentName() {
 		return this.studentName;
@@ -22,36 +22,23 @@ public class Suggestions {
 		return this.camp;
 	}
 
-	/**
-	 * 
-	 * @param String
-	 */
 	public void setStudentName(String String) {
 		this.studentName = String;
 	}
 
-	/**
-	 * 
-	 * @param String
-	 */
 	public void setContent(String String) {
 		this.content = String;
 	}
 
-	/**
-	 * 
-	 * @param String
-	 */
 	public void setReply(String String) {
 		this.reply = String;
 	}
 
-	/**
-	 * 
-	 * @param String
-	 */
 	public void setCamp(String String) {
 		this.camp = String;
 	}
 
+	public boolean getAccepted(){
+		return this.getAccepted();
+	}
 }

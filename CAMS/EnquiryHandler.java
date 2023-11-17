@@ -1,55 +1,50 @@
 import java.util.*;
 public class EnquiryHandler {
-
-	public void reply() {
-		// TODO - implement EnquiryHandler.reply
-		throw new UnsupportedOperationException();
+	public static void replyEnquiry(Enquiry enquiry) {
+		Scanner sc = new Scanner(System.in);
+		if(!enquiry.getProcessed()){
+			System.out.println("Enter reply: ");
+			String newReply = sc.next();
+			enquiry.setReply(newReply);
+		}else{
+			System.out.println("Enquiry has been processed, unable to reply.");
+		}
 	}
 
-	/**
-	 * 
-	 * @param staff
-	 */
-	public void view(Staff staff) {
-		// TODO - implement EnquiryHandler.view
-		throw new UnsupportedOperationException();
+	public static void editEnquiry(Enquiry enquiry, Student student){
+		Scanner sc = new Scanner(System.in);
+		if(!enquiry.getProcessed()){
+			System.out.println("Enter edited enquiry: ");
+			String newContent = sc.next();
+			enquiry.setContent(newContent);
+		}else{
+			System.out.println("Enquiry has been processed, unable to edit.");
+		}
 	}
-
-	/**
-	 * 
-	 * @param student
-	 */
-	public static void view(Student student) {
-		for(int i = 0; i < student.getEnquiries().size(); i++){
-			Enquiry enquiry = student.getEnquiries().get(i);
-			if(!enquiry.getProcessed()){
-				System.out.println((i+1) + " " + enquiry.getContent());
-			}
-		}	
-	}
-
-	/**
-	 * 
-	 * @param cc
-	 */
-	public void view(CampCommittee cc) {
-		// TODO - implement EnquiryHandler.view
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param e
-	 */
+	
 	public static void submitEnquiry(Student student, String content, Camp camp) {
 		Enquiry enquiry = new Enquiry(student.getName(), content, camp);
 		camp.addEnquiry(enquiry);
 		student.getEnquiries().add(enquiry);
 	}
 
-	public static void deleteEnquiry(Enquiry enquiry, ArrayList<Camp> campList) {
+	public static void deleteEnquiry(Enquiry enquiry, Student student){
+		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
+		String name = enquiry.getCamp();
+		int i = 0;
+		//See .filter if loop too clunky
 		if(!enquiry.getProcessed()){
-
+			Camp camp;
+			for (i = 0; i < campList.size(); i++) {
+				camp = campList.get(i);
+				if (camp.getCampInfo().getCampName().equals(name)){
+					break;
+				}
+			}
+			camp.getEnquiries().remove(enquiry);
+			student.getEnquiries().remove(enquiry);
+		}else{
+			System.out.println("Enquiry has been processed, unable to delete.");
 		}
 	}
 }

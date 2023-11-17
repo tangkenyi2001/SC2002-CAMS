@@ -7,18 +7,19 @@ public class Student extends User {
 		super(id,name,password,faculty);
 		this.registeredCamps = new ArrayList<>();
     	this.submittedEnquiries = new ArrayList<>();
+		this.Committee = null;
 	}
 	public void viewRegistered() {
 		System.out.println("Registered Camps: ");
 		int i = 1;
     	if (registeredCamps != null) {
         for (Camp registeredCamp : registeredCamps) {
-            System.out.print(i++);
-            System.out.println(registeredCamp.getCampInfo().getCampName());
-        	}
-    	} else {
-        System.out.println("No registered camps.");
-    }
+				System.out.print(i++);
+				System.out.println(registeredCamp.getCampInfo().getCampName());
+				}
+			} else {
+			System.out.println("No registered camps.");
+		}
 	}
 	public void setCampCommittee(CampCommittee committee){
 		this.Committee = committee;
@@ -31,5 +32,8 @@ public class Student extends User {
 	}
 	public ArrayList<Enquiry> getEnquiries(){
 		return this.submittedEnquiries;
+	}
+	public boolean isCommitee(){
+		return this.Committee == null;
 	}
 }
