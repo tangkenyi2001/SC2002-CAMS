@@ -1,4 +1,10 @@
+package Controller;
 import java.util.*;
+
+import Entity.Camp;
+import Entity.CampDatabase;
+import Entity.Enquiry;
+import Entity.Student;
 public class EnquiryHandler {
 	public static void replyEnquiry(Enquiry enquiry) {
 		Scanner sc = new Scanner(System.in);
@@ -35,13 +41,17 @@ public class EnquiryHandler {
 		//See .filter if loop too clunky
 		if(!enquiry.getProcessed()){
 			Camp camp;
+			camp = campList.get(i);
 			for (i = 0; i < campList.size(); i++) {
 				camp = campList.get(i);
 				if (camp.getCampInfo().getCampName().equals(name)){
 					break;
 				}
 			}
+			
 			camp.getEnquiries().remove(enquiry);
+			
+			
 			student.getEnquiries().remove(enquiry);
 		}else{
 			System.out.println("Enquiry has been processed, unable to delete.");

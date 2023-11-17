@@ -1,4 +1,15 @@
+package Boundary;
 import java.util.*;
+
+import Controller.EnquiryHandler;
+import Controller.PasswordHandler;
+import Controller.RegistrationHandler;
+import Controller.SuggestionHandler;
+import Controller.ViewHandler;
+import Entity.Camp;
+import Entity.Enquiry;
+import Entity.Student;
+
 public class StudentMenu{
     public static void printMenu(Student student, ArrayList<Camp> campList){
         Scanner sc = new Scanner(System.in);
@@ -149,13 +160,14 @@ public class StudentMenu{
                     case 10:
                         break;
                     case 11:
-                        //View Suggestions
+                        SuggestionHandler.viewSuggestion(student);
                         break;
                     case 12:
-                        //Edit Suggestions
+                        SuggestionHandler.editSuggestion(student);
                         break;
                     case 13:
                         //Delete Suggestions
+                        SuggestionHandler.deleteSuggestion(student);
                         break;
                     case 14:
                         Camp inChargeOf = student.getCampCommittee().getCommitteeOf();

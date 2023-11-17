@@ -1,4 +1,9 @@
+package Controller;
 import java.util.*;
+
+import Entity.Camp;
+import Entity.CampCommittee;
+import Entity.Student;
 public class RegistrationHandler {
 
 	public static void registerCamp(Student student, Camp camp){

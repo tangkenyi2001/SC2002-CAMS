@@ -1,4 +1,7 @@
+package Controller;
 import java.util.Scanner;
+
+import Entity.User;
 
 public class PasswordHandler {
 

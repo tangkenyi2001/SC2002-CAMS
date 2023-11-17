@@ -1,5 +1,12 @@
+package Controller;
 import java.util.*;
-class ViewHandler {
+
+import Entity.Camp;
+import Entity.CampDatabase;
+import Entity.Enquiry;
+import Entity.Staff;
+import Entity.Student;
+public class ViewHandler {
 	//Prints camps camp can register for
 	public static ArrayList<Camp> viewRegisterAvailable(Student student){
 		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
@@ -32,14 +39,20 @@ class ViewHandler {
 	public static void viewAvailableSlots(Student student){
 		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
 		Camp camp;
-		for(int i = 0; i < campList.size(); i++){
+		if (campList.size()==0){
+			System.out.println("No Camps Available");
+		}
+		else{
+			for(int i = 0; i < campList.size(); i++){
 			camp = campList.get(i);
 			if(((student.getFaculty().toUpperCase() == camp.getCampInfo().getUserGroup() && !student.getRegisteredCamps().contains(camp)) || (camp.getCampInfo().getUserGroup() == "ANY" && !student.getRegisteredCamps().contains(camp))) && camp.getVisibility()){
 				System.out.println("("+ (i+1) + ") " + camp.getCampInfo().getCampName());
 				System.out.println("Number of attendee slots: " + camp.getCampInfo().getAttendeeSlots());
 				System.out.println("Number of committee slots: " + camp.getCampInfo().getCommitteeSlots());
 			}
+			}
 		}
+		
 	}
 	public static void viewAll() {
 		ArrayList<Camp> camps;

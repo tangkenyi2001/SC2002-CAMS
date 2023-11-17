@@ -1,3 +1,4 @@
+package Entity;
 public class CampCommittee{
 	private Camp CommitteeOf;
 	private int points;

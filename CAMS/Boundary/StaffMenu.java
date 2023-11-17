@@ -1,5 +1,11 @@
+package Boundary;
 import java.util.*;
 
+import Controller.CampModifier;
+import Controller.PasswordHandler;
+import Controller.ViewHandler;
+import Entity.Camp;
+import Entity.Staff;
 public class StaffMenu {
     public static void printMenu(Staff aStaff, ArrayList<Camp> campList){
         Scanner sc = new Scanner(System.in);

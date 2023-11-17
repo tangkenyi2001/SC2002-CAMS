@@ -1,3 +1,6 @@
+package Controller;
+import Entity.Camp;
+
 public class CampEditor {
     public static void editDates(Camp aCamp){
         aCamp.getCampInfo().setStartDate();

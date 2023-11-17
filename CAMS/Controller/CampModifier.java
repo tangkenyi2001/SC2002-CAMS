@@ -1,4 +1,9 @@
+package Controller;
 import java.util.Scanner;
+
+import Entity.Camp;
+import Entity.CampDatabase;
+import Entity.Staff;
 
 public class CampModifier {
 
