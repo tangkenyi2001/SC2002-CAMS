@@ -1,21 +1,23 @@
 package Controller;
 import java.util.Scanner;
-
 import Entity.Camp;
 import Entity.CampDatabase;
 import Entity.Staff;
 
 public class CampModifier {
+	static Scanner sc = new Scanner(System.in);
 
 	public static void createCamp(Staff aStaff) {
 		Camp aCamp = new Camp();
 		CampDatabase.addCamps(aCamp);
 		aStaff.addToCreatedCamps(aCamp);
-		System.out.println("Camp successfully created!\nReturning to main menu");
 	}
 
-	public static void editCamp(Staff aStaff, int i) {
-		Scanner sc = new Scanner(System.in);
+	public static void editCamp(Staff aStaff) {
+		aStaff.viewCreatedCamps();
+		if(aStaff.getCreatedCamps().isEmpty()) return;
+		System.out.println("Which camp would you like to edit?");
+		int i = sc.nextInt()-1;		
 		Camp theCamp = aStaff.getCreatedCamps().get(i);
 		int choice;
 		
@@ -53,7 +55,11 @@ public class CampModifier {
         }while(choice<7 && choice>0);
 	}
 
-	public static void deleteCamp(Staff aStaff, int i) {
+	public static void deleteCamp(Staff aStaff) {
+        aStaff.viewCreatedCamps();
+		if (aStaff.getCreatedCamps().isEmpty()) return;
+		System.out.println("Which camp would you like to delete?");
+        int i = sc.nextInt()-1;
 		Camp theCamp = aStaff.getCreatedCamps().get(i);
 		if( theCamp.getAttendees().isEmpty() && theCamp.getCommittee().isEmpty() ){   
 			CampDatabase.getCamps().remove(theCamp);
@@ -62,8 +68,7 @@ public class CampModifier {
 		}
 		else {
 			System.out.println("Error : There are attendees or Camp Committee members registered!");
-		}
-		
+		}		
 	}
 
 	

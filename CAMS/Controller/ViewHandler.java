@@ -55,14 +55,16 @@ public class ViewHandler {
 		
 	}
 	public static void viewAll() {
+		int i=0;
 		ArrayList<Camp> camps;
 		camps = CampDatabase.getCamps(); 
 		if (camps.isEmpty()) {
-            System.out.println("There are no camps");
+            System.out.println("There are currently no camps created.");
         } else {
             System.out.println("List of all camps:");
             for (Camp camp : camps) {
-                System.out.println("Camp Name: " + camp.getCampInfo().getCampName());
+				i +=1;
+                System.out.println("(" + i + ")" + " Camp Name: " + camp.getCampInfo().getCampName());
 			}
 		}
 	}

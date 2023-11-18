@@ -43,4 +43,19 @@ public class Student extends User {
 	public boolean isCommitee(){
 		return this.Committee == null;
 	}
+	public void setPoints(){
+		int points = 0;
+		for (int i=0; i<getSuggestions().size();i++ ){
+			Suggestions a = getSuggestions().get(i);
+			if(a.getApproval()== true){
+				points += 1;
+			}
+			getCampCommittee().setPoints(points);
+		}
+	}
+
+	public int getPoints(){
+		setPoints();
+		return getCampCommittee().getPoints();
+	}
 }

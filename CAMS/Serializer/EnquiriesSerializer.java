@@ -3,6 +3,7 @@ package Serializer;
 import java.util.ArrayList;
 
 import Controller.*; // this line may need to change accordingly to your own device //
+import Entity.Enquiry;
 
 import java.io.*;
 
@@ -11,7 +12,7 @@ public class EnquiriesSerializer extends Serializer {
         super();
     }
 
-    public static void saveEnquiries(ArrayList<Enquiries> o, String filename) {
+    public static void saveEnquiries(ArrayList<Enquiry> o, String filename) {
         try {
             FileOutputStream fileOut = new FileOutputStream(filename);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -23,14 +24,14 @@ public class EnquiriesSerializer extends Serializer {
         }
     }
 
-    public static ArrayList<Enquiries> getEnquiries(String fileName) {
+    public static ArrayList<Enquiry> getEnquiries(String fileName) {
         FileInputStream fi = null;
         ObjectInputStream os = null;
-        ArrayList<Enquiries> enquiries = null;
+        ArrayList<Enquiry> enquiries = null;
         try {
             fi = new FileInputStream(fileName);
             os = new ObjectInputStream(fi);
-            enquiries = ((ArrayList<Enquiries>) os.readObject()); // type safety but i think it does not matter // 
+            enquiries = ((ArrayList<Enquiry>) os.readObject()); // type safety but i think it does not matter // 
         } catch (FileNotFoundException e) {
             // e.printStackTrace();
         } catch (EOFException e) {

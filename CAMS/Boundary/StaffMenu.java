@@ -1,6 +1,7 @@
 package Boundary;
 import java.util.*;
 
+import Controller.Beauty;
 import Controller.CampModifier;
 import Controller.PasswordHandler;
 import Controller.ViewHandler;
@@ -12,6 +13,7 @@ public class StaffMenu {
         int choice;
         int i;
         do{
+            Beauty.mainMenu();
             System.out.println("(1) Create Camp");
             System.out.println("(2) View All Camps");
             System.out.println("(3) View Created Camps");
@@ -31,26 +33,19 @@ public class StaffMenu {
                     break;
 
                 case 3:
-                    aStaff.viewCreatedCamps();
-                    StaffCreated.printMenu();                    
+                    StaffCreated.printMenu(aStaff);                    
                     break;
                     
                 case 4:
-                    System.out.println("Which camp would you like to edit?");
-                    aStaff.viewCreatedCamps();
-                    i = sc.nextInt()-1;
-                    CampModifier.editCamp(aStaff,i);
+                    CampModifier.editCamp(aStaff);
                     break;
 
                 case 5:
-                    System.out.println("Which camp would you like to delete?");
-                    aStaff.viewCreatedCamps();
-                    i = sc.nextInt()-1;
-                    CampModifier.deleteCamp(aStaff,i);
+                    CampModifier.deleteCamp(aStaff);
                     break;
                 case 6: PasswordHandler.changePassword(aStaff);
                         break;
-            }
+            } if (choice != 7) Beauty.backFunction();
         } while(choice < 7 && choice>0);
     }
 }

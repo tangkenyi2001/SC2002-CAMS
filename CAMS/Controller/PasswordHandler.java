@@ -16,11 +16,8 @@ public class PasswordHandler {
             System.out.println("Password has been succesfully changed.\nPress <key> to return");
         }
         else { 
-            System.out.println("Password is wrong!\nPress <key> to return");
+            System.out.println("Password is wrong!");
         }
-
-        sc.next();
-        return;
     }
 
 }

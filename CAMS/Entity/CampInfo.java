@@ -28,7 +28,7 @@ public class CampInfo {
             //System.out.println(this.startDate);   
 
 
-        System.out.println("2.Enter End Date (dd/mm/yyyy): ");
+        System.out.println("  Enter End Date (dd/mm/yyyy): ");
             String endDateStr = scanner.next();
             this.endDate = LocalDate.parse(endDateStr, formatter);  
             //System.out.println(this.endDate);  
@@ -50,7 +50,7 @@ public class CampInfo {
 
         System.out.println("6.Enter Total Slots: ");
             this.totalSlots=scanner.nextInt();
-        System.out.println("7 .Enter Number of Camp Committee Slots: ");   
+        System.out.println("7.Enter Number of Camp Committee Slots: ");   
             this.campCommitteeSlots=scanner.nextInt();
         System.out.println("8.Enter Description ");
             this.description=scanner.next().toUpperCase();
