@@ -2,7 +2,8 @@ package Serializer;
 
 import java.util.ArrayList;
 import java.io.*;
-import Controller.*; // this line may need to change accordingly to your own device //
+import Controller.*;
+import Entity.*; // this line may need to change accordingly to your own device //
 
 public class StudentSerializer extends Serializer {
     public StudentSerializer() {

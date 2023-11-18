@@ -41,7 +41,12 @@ public class Student extends User {
 		return this.submittedSuggestions;
 	}
 	public boolean isCommitee(){
-		return this.Committee == null;
+		if(this.Committee == null){
+			return false;
+		}
+		else{
+			return true;
+		}
 	}
 	public void setPoints(){
 		int points = 0;

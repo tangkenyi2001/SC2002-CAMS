@@ -3,6 +3,7 @@ import java.util.Scanner;
 import Boundary.StaffMenu;
 import Boundary.StudentMenu;
 import Controller.Beauty;
+import Controller.LoginHandler;
 import Entity.CampDatabase;
 import Entity.Staff;
 import Entity.Student;
@@ -15,7 +16,7 @@ public class main {
         //Camp Camp0=camper.getCamps().get(0);
         //System.out.println(Camp0.getCampInfo().getCampName()); */
 
-
+        LoginHandler.login();
 
         CampDatabase a = new CampDatabase();
         Staff aStaff = new Staff("thor" , "thor", "thor", "thor");

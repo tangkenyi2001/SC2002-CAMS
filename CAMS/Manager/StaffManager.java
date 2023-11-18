@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*;  
 import java.util.ArrayList;
 import Controller.*; 
-
+import Entity.*;
 import Serializer.*; 
 
 public class StaffManager {
@@ -24,6 +24,9 @@ public void addNewStaff(Staff newStaff) {
     staffs.add(newStaff);
     StaffSerializer.saveStaffs(staffs, "StaffDatabase.ser");
     System.out.println("Camps Successfully Saved.");
+}
+public ArrayList<Staff> getStaff(){
+    return this.staffs;
 }
 
 } 
