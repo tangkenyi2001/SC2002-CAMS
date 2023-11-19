@@ -22,7 +22,10 @@ public class CsvReader {
                 if (line.trim().isEmpty()|| line.split(",").length == 0) {
                     continue;
                 }
-                
+                for (int i=0;i<3;i++)
+                {
+                    values[i]=values[i].trim();
+                }
                 System.out.println(values[0]);
                 if (count!=0)
                 {
@@ -53,6 +56,10 @@ public class CsvReader {
                 }
                 
                 String [] values=line.split(",");
+                for (int i=0;i<3;i++)
+                {
+                    values[i]=values[i].trim();
+                }
                 System.out.println(values[0]);
                 int indexofat=values[1].indexOf('@');
                 if (count!=0)

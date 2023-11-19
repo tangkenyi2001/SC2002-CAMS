@@ -53,6 +53,9 @@ public class EnquiryHandler {
 			System.out.println("Enquiry has been processed, unable to delete.");
 		}
 	}
+	public static void replyEnquiry(Enquiry enquiry){
+		return;
+	}
 
 }
 

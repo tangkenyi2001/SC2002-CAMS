@@ -28,5 +28,13 @@ public void addNewStaff(Staff newStaff) {
 public ArrayList<Staff> getStaff(){
     return this.staffs;
 }
+public void clearStaffs() {
+    // Clear the staffs list
+    this.staffs.clear();
+
+    // Save the empty list to the serialized file
+    StaffSerializer.saveStaffs(staffs, "StaffDatabase.ser");
+    System.out.println("Staff Database Cleared.");
+}
 
 } 

@@ -30,6 +30,13 @@ public void addNewCamp(Camp newCamp) {
 public ArrayList<Camp> getCamp(){
     return this.campList;
 }
+public void clearCamps() {
+    // Clear the student list
+    this.campList.clear();
 
+    // Save the empty list to the serialized file
+    CampSerializer.saveCamps(campList, "CampsDatabase.ser");
+    System.out.println("Camp Database Cleared.");
+}
 } 
 

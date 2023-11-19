@@ -25,5 +25,12 @@ public void addEnquiry(Enquiry newEnquiry) {
     EnquiriesSerializer.saveEnquiries(enquiries, "EnquiriesDatabase.ser");
     System.out.println("Enquiries Successfully Saved.");
 }
+public void clearEnquiries() {
+    // Clear the student list
+    this.enquiries.clear();
 
+    // Save the empty list to the serialized file
+    EnquiriesSerializer.saveEnquiries(enquiries, "EnquiriesDatabase.ser");
+    System.out.println("Enquiries Database Cleared.");
+}
 } 

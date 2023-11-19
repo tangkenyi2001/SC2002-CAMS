@@ -24,5 +24,12 @@ public void addSuggestion(Suggestions newSuggestion) {
     SuggestionsSerializer.saveSuggestions(suggestions, "SuggestionsDatabase.ser");
     System.out.println("Suggestions Successfully Saved.");
 }
+public void clearSuggestion() {
+    // Clear the student list
+    this.suggestions.clear();
 
+    // Save the empty list to the serialized file
+    SuggestionsSerializer.saveSuggestions(suggestions, "SuggestionsDatabase.ser");
+    System.out.println("Suggestions Database Cleared.");
+}
 } 

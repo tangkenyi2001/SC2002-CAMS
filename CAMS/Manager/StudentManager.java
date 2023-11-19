@@ -29,5 +29,12 @@ public void addStudent(Student newsStudent) {
 public ArrayList<Student> getStudents(){
     return this.students;
 }
+public void clearStudents() {
+    // Clear the student list
+    this.students.clear();
 
+    // Save the empty list to the serialized file
+    StudentSerializer.saveStudents(students, "StudentDatabase.ser");
+    System.out.println("Student Database Cleared.");
+}
 } 
