@@ -1,5 +1,7 @@
 package Entity;
-public class CampCommittee{
+import java.io.Serializable;
+
+public class CampCommittee implements Serializable{
 	private Camp CommitteeOf;
 	private int points;
 	public CampCommittee(Camp camp) {

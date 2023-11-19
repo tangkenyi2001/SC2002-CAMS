@@ -1,7 +1,8 @@
 package Entity;
 import java.util.*;
+import java.io.Serializable;
 
-public class Staff extends User {
+public class Staff extends User implements Serializable{
 
 	private ArrayList<Camp> createdCamps = new ArrayList<>();
 	// default constructor when staff is first initialised

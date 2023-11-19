@@ -14,6 +14,7 @@ public class LoginHandler {
     public static void login(){
         String username,password,domain;
         Scanner sc =new Scanner(System.in);
+        System.out.println("CAMS APPLICATION 2023 ");
         System.out.println("User Name: ");
         System.out.println("Password: ");
         System.out.println("Domain: ");
@@ -78,7 +79,7 @@ public class LoginHandler {
                 StaffMenu.printMenu(staff, campManager.getCamp());
             }
         }
-
+        
     }
 }
         

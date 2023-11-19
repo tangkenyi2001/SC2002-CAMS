@@ -1,6 +1,8 @@
 package Entity;
 import java.util.ArrayList;
-public class Student extends User {
+import java.io.Serializable; 
+
+public class Student extends User implements Serializable{
 	private ArrayList<Camp> registeredCamps;
 	private CampCommittee Committee;
 	private ArrayList<Enquiry> submittedEnquiries;

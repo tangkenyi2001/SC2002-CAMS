@@ -15,14 +15,13 @@ public class main {
         //camper.addCamps();
         //Camp Camp0=camper.getCamps().get(0);
         //System.out.println(Camp0.getCampInfo().getCampName()); */
-
-        LoginHandler.login();
-
         CampDatabase a = new CampDatabase();
-        Staff aStaff = new Staff("thor" , "thor", "thor", "thor");
-        StaffMenu.printMenu(aStaff, CampDatabase.getCamps());
-        /*Student john = new Student("123", "john", "john", "SCSE");
-        StudentMenu.printMenu(john, a.getCamps());*/
+        //LoginHandler.login();//will print the menu accordingly.
+     
+        //Staff aStaff = new Staff("thor" , "thor", "thor", "thor");
+        //StaffMenu.printMenu(aStaff, CampDatabase.getCamps());
+        Student john = new Student("123", "john", "john", "SCSE");
+        StudentMenu.printMenu(john, CampDatabase.getCamps());
 
     }
 

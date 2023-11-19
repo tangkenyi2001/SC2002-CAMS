@@ -40,7 +40,13 @@ public class StudentMenu{
                         ViewHandler.viewEnquiries(student);
                         break;
                     case 4:
+                        
                         ArrayList<Camp> availableCamps = ViewHandler.viewRegisterAvailable(student);
+                        if (availableCamps.size()==0)
+                        {
+                            System.out.println("No available Camps");
+                            break;
+                        }
                         System.out.println("Select camp to register for: ");
                         choice = sc.nextInt();
                         camp = availableCamps.get(choice -1);

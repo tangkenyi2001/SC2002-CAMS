@@ -2,8 +2,9 @@ package Entity;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*; 
+import java.io.Serializable;
 
-public class CampInfo {
+public class CampInfo implements Serializable{
 	private String campName;
 	private LocalDate startDate;
 	private LocalDate endDate;

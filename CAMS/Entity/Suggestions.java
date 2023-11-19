@@ -1,8 +1,9 @@
 package Entity;
 
 import java.util.Scanner;
+import java.io.Serializable;
 
-public class Suggestions {
+public class Suggestions implements Serializable {
 
 	private String studentName;
 	private String content;
