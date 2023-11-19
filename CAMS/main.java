@@ -7,6 +7,7 @@ import Controller.LoginHandler;
 import Entity.CampDatabase;
 import Entity.Staff;
 import Entity.Student;
+import Manager.CsvReader;
 
 public class main {
 
@@ -15,9 +16,10 @@ public class main {
         //camper.addCamps();
         //Camp Camp0=camper.getCamps().get(0);
         //System.out.println(Camp0.getCampInfo().getCampName()); */
-        CampDatabase a = new CampDatabase();
+        //CampDatabase a = new CampDatabase();
         //LoginHandler.login();//will print the menu accordingly.
-     
+        CsvReader.readstaff();
+        CsvReader.readstudent();
         //Staff aStaff = new Staff("thor" , "thor", "thor", "thor");
         //StaffMenu.printMenu(aStaff, CampDatabase.getCamps());
         Student john = new Student("123", "john", "john", "SCSE");
