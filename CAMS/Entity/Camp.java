@@ -1,7 +1,8 @@
 package Entity;
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class Camp {
+public class Camp implements Serializable{
 
 	private CampInfo campInformation;
 	private ArrayList<Student> attendees;

@@ -1,10 +1,10 @@
 package Entity;
 import java.util.*;
+import java.io.Serializable;
 
-public class Staff extends User {
+public class Staff extends User implements Serializable{
 
 	private ArrayList<Camp> createdCamps = new ArrayList<>();
-
 	// default constructor when staff is first initialised
 	public Staff(String id, String name, String password, String faculty) {
 		super(id,name,password,faculty);
@@ -14,12 +14,14 @@ public class Staff extends User {
 	
 
 	public void viewCreatedCamps() {
+		int i = 0;
 		if (createdCamps.isEmpty()) {
-            System.out.println("No camps created yet.");
+            System.out.println("You have not created any camps yet.");
         } else {
             System.out.println("List of Created Camps:");
             for (Camp camp : createdCamps) {
-                System.out.println("Camp Name: " + camp.getCampInfo().getCampName());
+				i +=1;
+                System.out.println("("+i+")" + " Camp Name: " + camp.getCampInfo().getCampName());
 			}
 		}
 	}

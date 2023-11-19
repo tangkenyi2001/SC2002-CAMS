@@ -1,26 +1,27 @@
 package Controller;
+
 import java.util.Scanner;
 
 import Entity.User;
 
 public class PasswordHandler {
 
-    public static void changePassword(User aUser){
+    public static void changePassword(User aUser) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your old password:");
-        String oldPW = sc.nextLine();
-        if (oldPW == aUser.getPassword()){
-            System.out.println("Enter your new password");
+        
+        System.out.print("Enter your old password: ");
+        String oldPW = sc.nextLine();        
+        if (verifyOldPassword(aUser, oldPW)) {
+            System.out.print("Enter your new password: ");
             String newPW = sc.nextLine();
             aUser.setPassword(newPW);
-            System.out.println("Password has been succesfully changed.\nPress <key> to return");
+            System.out.println("Password has been successfully changed.");
+        } else {
+            System.out.println("Incorrect old password!");
         }
-        else { 
-            System.out.println("Password is wrong!\nPress <key> to return");
-        }
-
-        sc.next();
-        return;
     }
 
+    private static boolean verifyOldPassword(User aUser, String oldPassword) {
+        return aUser.getPassword().equals(oldPassword);
+    }
 }

@@ -1,6 +1,8 @@
 package Entity;
 import java.util.ArrayList;
-public class Student extends User {
+import java.io.Serializable; 
+
+public class Student extends User implements Serializable{
 	private ArrayList<Camp> registeredCamps;
 	private CampCommittee Committee;
 	private ArrayList<Enquiry> submittedEnquiries;
@@ -41,6 +43,26 @@ public class Student extends User {
 		return this.submittedSuggestions;
 	}
 	public boolean isCommitee(){
-		return this.Committee == null;
+		if(this.Committee == null){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+	public void setPoints(){
+		int points = 0;
+		for (int i=0; i<getSuggestions().size();i++ ){
+			Suggestions a = getSuggestions().get(i);
+			if(a.getApproval()== true){
+				points += 1;
+			}
+			getCampCommittee().setPoints(points);
+		}
+	}
+
+	public int getPoints(){
+		setPoints();
+		return getCampCommittee().getPoints();
 	}
 }

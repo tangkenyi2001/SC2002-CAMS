@@ -1,5 +1,7 @@
 package Entity;
-public class Enquiry{
+import java.io.Serializable; 
+
+public class Enquiry implements Serializable{
 
 	private String studentName;
 	private String content;

@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*; 
 import java.util.ArrayList;
 import Controller.*; 
-
+import Entity.*;
 import Serializer.*; 
 
 public class CampManager {
@@ -26,6 +26,9 @@ public void addNewCamp(Camp newCamp) {
     campList.add(newCamp);
     CampSerializer.saveCamps(campList, "CampsDatabase.ser");
     System.out.println("Camps Successfully Saved.");
+}
+public ArrayList<Camp> getCamp(){
+    return this.campList;
 }
 
 } 

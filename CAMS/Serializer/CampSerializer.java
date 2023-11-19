@@ -5,7 +5,8 @@ import java.io.*;
 
 // not sure if the import statement below is correct // 
 // may need to edit on your local device for consistency // 
-import Controller.*; 
+import Controller.*;
+import Entity.Camp; 
 
 public class CampSerializer extends Serializer {
     public CampSerializer() {

@@ -1,19 +1,12 @@
 package Entity;
-public class CampCommittee{
+import java.io.Serializable;
+
+public class CampCommittee implements Serializable{
 	private Camp CommitteeOf;
 	private int points;
 	public CampCommittee(Camp camp) {
+		super();
 		this.CommitteeOf = camp;
-	}
-
-	public void printCommitteeMenu() {
-		// TODO - implement CampCommittee.printComitteeMenu
-		throw new UnsupportedOperationException();
-	}
-
-	public void printCommitteeOf() {
-		// TODO - implement CampCommittee.PrintCommitteeOf
-		throw new UnsupportedOperationException();
 	}
 
 	public Camp getCommitteeOf() {

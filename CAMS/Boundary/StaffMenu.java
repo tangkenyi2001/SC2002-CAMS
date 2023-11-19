@@ -1,56 +1,56 @@
 package Boundary;
 import java.util.*;
 
+import Controller.Beauty;
+import Controller.CampEditor;
 import Controller.CampModifier;
 import Controller.PasswordHandler;
-import Controller.ViewHandler;
+import Controller.StaffViewHandler;
 import Entity.Camp;
 import Entity.Staff;
 public class StaffMenu {
-    public static void printMenu(Staff aStaff, ArrayList<Camp> campList){
+
+    public static void printMenu(Staff aStaff, ArrayList<Camp> arrayList){
         Scanner sc = new Scanner(System.in);
         int choice;
         int i;
         do{
-            System.out.println("(1) Create Camp");
-            System.out.println("(2) View All Camps");
-            System.out.println("(3) View Created Camps");
-            System.out.println("(4) Edit Camp");
-            System.out.println("(5) Delete Camp");
+            Beauty.mainMenu();
+            System.out.println("(1) View All Camps");
+            System.out.println("(2) View Created Camps");
+            System.out.println("(3) Create a camp");
+            System.out.println("(4) Delete a Camp");
+            System.out.println("(5) Edit camps");
             System.out.println("(6) Change password");
             System.out.println("(7) Exit");
             System.out.println("Enter choice: ");
             choice = sc.nextInt();
             switch(choice){
                 case 1:
-                    CampModifier.createCamp(aStaff);
+                    StaffViewHandler.view();
                     break;
 
                 case 2:
-                    ViewHandler.viewAll();
+                    StaffCreated.printMenu(aStaff);  
                     break;
 
                 case 3:
-                    aStaff.viewCreatedCamps();
-                    StaffCreated.printMenu();                    
+                    CampModifier.createCamp(aStaff);                  
                     break;
                     
                 case 4:
-                    System.out.println("Which camp would you like to edit?");
-                    aStaff.viewCreatedCamps();
-                    i = sc.nextInt()-1;
-                    CampModifier.editCamp(aStaff,i);
+                    CampModifier.deleteCamp(aStaff);
                     break;
 
                 case 5:
-                    System.out.println("Which camp would you like to delete?");
-                    aStaff.viewCreatedCamps();
-                    i = sc.nextInt()-1;
-                    CampModifier.deleteCamp(aStaff,i);
+                    CampEditor.editCamp(aStaff);
                     break;
-                case 6: PasswordHandler.changePassword(aStaff);
-                        break;
-            }
+
+                case 6: 
+                    PasswordHandler.changePassword(aStaff);
+                    break;
+
+            } if (choice != 7 && choice !=5) Beauty.backFunction();
         } while(choice < 7 && choice>0);
     }
 }

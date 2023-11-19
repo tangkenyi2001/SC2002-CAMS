@@ -1,7 +1,10 @@
 package Controller;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import Entity.Camp;
+import Entity.Enquiry;
+import Entity.Staff;
 import Entity.Student;
 import Entity.Suggestions;
 
@@ -88,5 +91,4 @@ public class SuggestionHandler {
 		student.getCampCommittee().getCommitteeOf().getSuggestions().add(newSuggestions);
 		//updated to the camps
 	}
-
 }
