@@ -7,7 +7,7 @@ public class Staff extends User implements Serializable{
 	private ArrayList<Camp> createdCamps = new ArrayList<>();
 	// default constructor when staff is first initialised
 	public Staff(String id, String name, String password, String faculty) {
-		super(id,name,password,faculty);
+		super(id,name,password.toUpperCase(),faculty);
 	}
 	
 	// need to have constructor for existing user

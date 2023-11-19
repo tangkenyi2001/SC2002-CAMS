@@ -19,11 +19,11 @@ public class LoginHandler {
         System.out.println("Password: ");
         System.out.println("Domain: ");
         System.out.println("Enter User Name: ");
-        username=sc.nextLine();
+        username=sc.nextLine().toUpperCase();
         System.out.println("Enter Password: ");
-        password=sc.nextLine();
+        password=sc.nextLine().toUpperCase();
         System.out.println("Enter Domain: ");
-        domain=sc.nextLine();
+        domain=sc.nextLine().toUpperCase();
         int status=VerificationHandler.verify(username, password, domain);
          //-1 is non user
         //0 is student

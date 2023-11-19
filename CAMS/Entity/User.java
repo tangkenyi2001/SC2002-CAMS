@@ -38,7 +38,7 @@ public class User implements Serializable{
 
 
 	public void setPassword(String Password) {
-		this.password = Password;
+		this.password = Password.toUpperCase();
 	}
 
 	public String getFaculty() {

@@ -20,6 +20,7 @@ public class main {
         //LoginHandler.login();//will print the menu accordingly.
         CsvReader.readstaff();
         CsvReader.readstudent();
+        LoginHandler.login();
         //Staff aStaff = new Staff("thor" , "thor", "thor", "thor");
         //StaffMenu.printMenu(aStaff, CampDatabase.getCamps());
         Student john = new Student("123", "john", "john", "SCSE");
