@@ -4,11 +4,12 @@ import java.util.*;
 import java.io.*; 
 import java.util.ArrayList;
 import Controller.*;
+import Entity.Enquiry;
 import Entity.Suggestions;
 import Serializer.*; 
 
 public class SuggestionsManager {
-    private ArrayList<Suggestions> suggestions;
+    private static ArrayList<Suggestions> suggestions;
     static SuggestionsSerializer s = new SuggestionsSerializer(); 
 
 public SuggestionsManager() {
@@ -24,6 +25,10 @@ public void addSuggestion(Suggestions newSuggestion) {
     SuggestionsSerializer.saveSuggestions(suggestions, "SuggestionsDatabase.ser");
     System.out.println("Suggestions Successfully Saved.");
 }
+public static ArrayList<Suggestions> getSuggestions() {
+		System.out.println("Retrieving Suggestions.");
+		return suggestions;
+	}
 public void clearSuggestion() {
     // Clear the student list
     this.suggestions.clear();

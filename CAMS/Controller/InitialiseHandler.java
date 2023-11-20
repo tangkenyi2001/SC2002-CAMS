@@ -11,10 +11,6 @@ public class InitialiseHandler {
     public static void initialise(){
         StudentManager studentManager=new StudentManager();
         StaffManager staffManager=new StaffManager();
-        CampDatabase campDatabase=new CampDatabase();
-        EnquiriesManager enquiriesManager=new EnquiriesManager();
-        SuggestionsManager suggestionsManager=new SuggestionsManager();
-        CampManager campManager=new CampManager();
         if (staffManager.getStaff().isEmpty()&&studentManager.getStudents().isEmpty())
         {
             

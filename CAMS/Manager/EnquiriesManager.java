@@ -4,11 +4,12 @@ import java.util.*;
 import java.io.*; 
 import java.util.ArrayList;
 import Controller.*;
+import Entity.Camp;
 import Entity.Enquiry;
 import Serializer.*; 
 
 public class EnquiriesManager {
-    private ArrayList<Enquiry> enquiries;
+    private static ArrayList<Enquiry> enquiries;
     static EnquiriesSerializer s = new EnquiriesSerializer();
 
 
@@ -25,6 +26,10 @@ public void addEnquiry(Enquiry newEnquiry) {
     EnquiriesSerializer.saveEnquiries(enquiries, "EnquiriesDatabase.ser");
     System.out.println("Enquiries Successfully Saved.");
 }
+public static ArrayList<Enquiry> getEnquiry() {
+		System.out.println("Retrieving Enquiries.");
+		return enquiries;
+	}
 public void clearEnquiries() {
     // Clear the student list
     this.enquiries.clear();

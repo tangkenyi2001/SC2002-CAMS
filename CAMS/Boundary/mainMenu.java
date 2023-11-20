@@ -8,6 +8,7 @@ import Controller.ClearDatabase;
 import Controller.InitialiseHandler;
 import Controller.LoadDataHandler;
 import Controller.LoginHandler;
+import Controller.SaveHandler;
 import Controller.StaffViewHandler;
 import Entity.Camp;
 import Entity.Staff;
@@ -46,6 +47,7 @@ public static void printMainMenu(){
                     
                 case 4:
                     System.out.println("Exiting Program");
+                    SaveHandler.saveData();
                     System.exit(0);
                     break;
                 } if (choice != 4) Beauty.backFunction();

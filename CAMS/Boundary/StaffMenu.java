@@ -51,6 +51,7 @@ public class StaffMenu {
                     PasswordHandler.changePassword(aStaff);
                     break;
                 case 7:
+                    //save
                     LogoutHandler.logout();
             } if (choice != 7 && choice !=5) Beauty.backFunction();
         } while(choice < 8 && choice>0);
