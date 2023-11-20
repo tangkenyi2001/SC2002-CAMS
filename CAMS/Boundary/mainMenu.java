@@ -32,7 +32,6 @@ public static void printMainMenu(){
 
                 case 2:
                     IntialiseHandler.loaddata(); 
-                     System.out.println("Database has been initialised"); 
                     break;
 
                 case 3:
