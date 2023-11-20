@@ -1,10 +1,11 @@
 package Controller;
 
+import Entity.User;
 import Manager.StaffManager;
 import Manager.StudentManager;
 // call this to check if item is in database
 public class VerificationHandler {
-    public static int verify(String username,String password, String domain){
+    public static User verify(String username,String password, String domain){
         //-1 is non user
         //0 is student
         //1 is cc
@@ -22,18 +23,23 @@ public class VerificationHandler {
                     {
                         if (student.getStudents().get(i).isCommitee()==true)
                         {
-                            return 1;
+                            return student.getStudents().get(i);
+                            
                         }
                         
                         else{
-                            return 0;
+                            return student.getStudents().get(i);
                         }
                     }
                     else{
-                        return -1;
+                        System.out.println("Wrong Password! ");
+                        System.out.println("Please Try Again! ");
+                        return null;
                     }
                 }
             }
+            System.out.println("No Existing Student! ");
+            System.out.println("Please Try Again! ");
 
         }
         if (domain.toUpperCase().equals("STAFF"))
@@ -46,14 +52,20 @@ public class VerificationHandler {
                 if (username.equals(staff.getStaff().get(i).getName())){
                     if (password.equals(staff.getStaff().get(i).getPassword()))
                     {
-                        return 2;
+                        return staff.getStaff().get(i);
                     }
                     else{
-                        return -1;
+                        System.out.println("Wrong Password! ");
+                        System.out.println("Please Try Again! ");
+                        return null;
                     }
                 }
             }
+            System.out.println("No Existing Staff! ");
+            System.out.println("Please Try Again! ");
         }
-        return -1;
+        System.out.println("No Existing User! ");
+        System.out.println("Please Try Again! ");
+        return null;
     }
 }

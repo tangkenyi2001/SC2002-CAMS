@@ -31,6 +31,6 @@ public void clearEnquiries() {
 
     // Save the empty list to the serialized file
     EnquiriesSerializer.saveEnquiries(enquiries, "EnquiriesDatabase.ser");
-    System.out.println("Enquiries Database Cleared.");
+    //System.out.println("Enquiries Database Cleared.");
 }
 } 

@@ -2,6 +2,7 @@ package Boundary;
 import java.util.*;
 
 import Controller.EnquiryHandler;
+import Controller.LogoutHandler;
 import Controller.PasswordHandler;
 import Controller.RegistrationHandler;
 import Controller.SuggestionHandler;
@@ -15,7 +16,7 @@ public class StudentMenu{
         Scanner sc = new Scanner(System.in);
         int choice;
         Camp camp;
-        if(student.isCommitee()){
+        if(!student.isCommitee()){
             do{
                 System.out.println("(1) View Camps");
                 System.out.println("(2) View Registered Camps");
@@ -48,7 +49,9 @@ public class StudentMenu{
                             break;
                         }
                         System.out.println("Select camp to register for: ");
-                        choice = sc.nextInt();
+                        do{
+                            choice = sc.nextInt();
+                        }while (choice>availableCamps.size());
                         camp = availableCamps.get(choice -1);
                         RegistrationHandler.registerCamp(student, camp);
                         System.out.println("Registered for camp " + camp.getCampInfo().getCampName() + ".");
@@ -87,7 +90,7 @@ public class StudentMenu{
                         if(student.getCampCommittee() != null){
                             //Submit Suggestions
                         }else{
-                            //Logout
+                            LogoutHandler.logout();
                         }
                         break;
                     default:
@@ -188,7 +191,7 @@ public class StudentMenu{
                         EnquiryHandler.replyEnquiry(toReply);
                         break;
                     case 16:
-                        //Logout
+                        LogoutHandler.logout();
                         break;
                     default:
                         break;

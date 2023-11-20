@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import Entity.Camp;
 import Entity.Staff;
+import Manager.CampManager;
 
 public class CampEditor {
     static Scanner sc = new Scanner(System.in);
@@ -42,6 +43,8 @@ public class CampEditor {
                     break;
                 case 5:
                     CampEditor.editVisibility(theCamp);
+                    CampManager campManager=new CampManager();
+                    campManager.updateCamp(theCamp);
                     break;
                 case 6:
                     CampEditor.editUserGroup(theCamp);

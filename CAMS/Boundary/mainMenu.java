@@ -5,7 +5,8 @@ import java.util.*;
 import Controller.Beauty;
 import Controller.CampModifier;
 import Controller.ClearDatabase;
-import Controller.IntialiseHandler;
+import Controller.InitialiseHandler;
+import Controller.LoadDataHandler;
 import Controller.LoginHandler;
 import Controller.StaffViewHandler;
 import Entity.Camp;
@@ -24,14 +25,18 @@ public static void printMainMenu(){
             System.out.println("(3) Clear Database");
             System.out.println("(4) Exit");
             System.out.println("Enter choice: ");
-            choice = sc.nextInt();
+            do{
+                choice = sc.nextInt();
+            }while (choice >5);
+            
             switch(choice){
                 case 1:
+                    InitialiseHandler.initialise(); 
                     LoginHandler.login();
                     break;
 
                 case 2:
-                    IntialiseHandler.loaddata(); 
+                    LoadDataHandler.loaddata(); 
                     break;
 
                 case 3:

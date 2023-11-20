@@ -4,6 +4,7 @@ import java.util.*;
 import Controller.Beauty;
 import Controller.CampEditor;
 import Controller.CampModifier;
+import Controller.LogoutHandler;
 import Controller.PasswordHandler;
 import Controller.StaffViewHandler;
 import Entity.Camp;
@@ -22,7 +23,7 @@ public class StaffMenu {
             System.out.println("(4) Delete a Camp");
             System.out.println("(5) Edit camps");
             System.out.println("(6) Change password");
-            System.out.println("(7) Exit");
+            System.out.println("(7) Logout");
             System.out.println("Enter choice: ");
             choice = sc.nextInt();
             switch(choice){
@@ -49,8 +50,9 @@ public class StaffMenu {
                 case 6: 
                     PasswordHandler.changePassword(aStaff);
                     break;
-
+                case 7:
+                    LogoutHandler.logout();
             } if (choice != 7 && choice !=5) Beauty.backFunction();
-        } while(choice < 7 && choice>0);
+        } while(choice < 8 && choice>0);
     }
 }

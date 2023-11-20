@@ -26,7 +26,7 @@ public class CsvReader {
                 {
                     values[i]=values[i].trim();
                 }
-                System.out.println(values[0]);
+                //System.out.println(values[0]);
                 if (count!=0)
                 {
                     int indexofat=values[1].indexOf('@');
@@ -60,7 +60,7 @@ public class CsvReader {
                 {
                     values[i]=values[i].trim();
                 }
-                System.out.println(values[0]);
+                //System.out.println(values[0]);
                 int indexofat=values[1].indexOf('@');
                 if (count!=0)
                 {

@@ -36,7 +36,17 @@ public void clearCamps() {
 
     // Save the empty list to the serialized file
     CampSerializer.saveCamps(campList, "CampsDatabase.ser");
-    System.out.println("Camp Database Cleared.");
+    //System.out.println("Camp Database Cleared.");
 }
+public void updateCamp(Camp camp){
+    int i=0;
+    for (i=0;i<getCamp().size();i++)
+                    {
+                        if (camp.getCampInfo().getCampName().equals(getCamp().get(i).getCampInfo().getCampName()))
+                        {
+                            getCamp().set(i,camp);
+                        }
+                    }
+        CampSerializer.saveCamps(getCamp(), "CampsDatabase.ser");
 } 
-
+}

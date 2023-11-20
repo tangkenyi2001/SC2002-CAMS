@@ -3,6 +3,7 @@ import java.util.Scanner;
 import Entity.Camp;
 import Entity.CampDatabase;
 import Entity.Staff;
+import Manager.StaffManager;
 
 public class CampModifier {
 	static Scanner sc = new Scanner(System.in);
@@ -11,6 +12,8 @@ public class CampModifier {
 		Camp aCamp = new Camp();
 		CampDatabase.addCamps(aCamp);
 		aStaff.addToCreatedCamps(aCamp);
+		StaffManager staffManager=new StaffManager();
+		staffManager.updateStaff(aStaff);
 	}
 
 

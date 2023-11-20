@@ -30,6 +30,6 @@ public void clearSuggestion() {
 
     // Save the empty list to the serialized file
     SuggestionsSerializer.saveSuggestions(suggestions, "SuggestionsDatabase.ser");
-    System.out.println("Suggestions Database Cleared.");
+    //System.out.println("Suggestions Database Cleared.");
 }
 } 

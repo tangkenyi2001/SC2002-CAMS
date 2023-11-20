@@ -23,10 +23,21 @@ public StaffManager() {
 public void addNewStaff(Staff newStaff) {
     staffs.add(newStaff);
     StaffSerializer.saveStaffs(staffs, "StaffDatabase.ser");
-    System.out.println("Staff Successfully Saved.");
+    //System.out.println("Staff Successfully Saved.");
 }
 public ArrayList<Staff> getStaff(){
     return this.staffs;
+}
+public void updateStaff(Staff staff){
+    int i=0;
+    for (i=0;i<getStaff().size();i++)
+                    {
+                        if (staff.getName().equals(getStaff().get(i).getName()))
+                        {
+                            getStaff().set(i,staff);
+                        }
+                    }
+                    StaffSerializer.saveStaffs(getStaff(), "StaffDatabase.ser");
 }
 public void clearStaffs() {
     // Clear the staffs list
@@ -34,7 +45,7 @@ public void clearStaffs() {
 
     // Save the empty list to the serialized file
     StaffSerializer.saveStaffs(staffs, "StaffDatabase.ser");
-    System.out.println("Staff Database Cleared.");
+    //System.out.println("Staff Database Cleared.");
 }
 
 } 

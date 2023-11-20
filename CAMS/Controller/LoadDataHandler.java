@@ -1,13 +1,21 @@
 package Controller;
 
+import Entity.CampDatabase;
+import Manager.CampManager;
 import Manager.CsvReader;
+import Manager.EnquiriesManager;
 import Manager.StaffManager;
 import Manager.StudentManager;
+import Manager.SuggestionsManager;
 
-public class IntialiseHandler {
+public class LoadDataHandler {
     public static void loaddata() {
         StudentManager studentManager=new StudentManager();
         StaffManager staffManager=new StaffManager();
+        CampDatabase campDatabase=new CampDatabase();
+        EnquiriesManager enquiriesManager=new EnquiriesManager();
+        SuggestionsManager suggestionsManager=new SuggestionsManager();
+        CampManager campManager=new CampManager();
         //make sure only initialised once
         if (staffManager.getStaff().isEmpty()&&studentManager.getStudents().isEmpty()){
             CsvReader.readstaff();

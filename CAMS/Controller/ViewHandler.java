@@ -9,12 +9,12 @@ import Entity.Student;
 public class ViewHandler {
 	//Prints camps camp can register for
 	public static ArrayList<Camp> viewRegisterAvailable(Student student){
-		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
+		ArrayList<Camp> campList = CampDatabase.getCamps();
 		ArrayList<Camp> availableCamps = new ArrayList<>();
 		Camp camp;
 		for(int i = 0; i < campList.size(); i++){
 			camp = campList.get(i);
-			if(((student.getFaculty().toUpperCase() == camp.getCampInfo().getUserGroup() && !student.getRegisteredCamps().contains(camp)) || (camp.getCampInfo().getUserGroup() == "ANY" && !student.getRegisteredCamps().contains(camp))) && camp.getVisibility()){
+			if(((student.getFaculty().toUpperCase() == camp.getCampInfo().getUserGroup() && !student.getRegisteredCamps().contains(camp)) || (camp.getCampInfo().getUserGroup().equals("ANY") && !student.getRegisteredCamps().contains(camp))) && camp.getVisibility()){
 				System.out.println("("+ (i+1) + ") " + camp.getCampInfo().getCampName());
 				availableCamps.add(camp);
 			}
@@ -37,7 +37,7 @@ public class ViewHandler {
 	}
 	
 	public static void viewAvailableSlots(Student student){
-		ArrayList<Camp> campList = new ArrayList<>(CampDatabase.getCamps());
+		ArrayList<Camp> campList = CampDatabase.getCamps();
 		Camp camp;
 		if (campList.size()==0){
 			System.out.println("No Camps Available");
@@ -45,7 +45,7 @@ public class ViewHandler {
 		else{
 			for(int i = 0; i < campList.size(); i++){
 			camp = campList.get(i);
-			if(((student.getFaculty().toUpperCase() == camp.getCampInfo().getUserGroup() && !student.getRegisteredCamps().contains(camp)) || (camp.getCampInfo().getUserGroup() == "ANY" && !student.getRegisteredCamps().contains(camp))) && camp.getVisibility()){
+			if(((student.getFaculty().toUpperCase().equals(camp.getCampInfo().getUserGroup()) && !student.getRegisteredCamps().contains(camp)) || (camp.getCampInfo().getUserGroup().equals("ANY") && !student.getRegisteredCamps().contains(camp))) && camp.getVisibility()){
 				System.out.println("("+ (i+1) + ") " + camp.getCampInfo().getCampName());
 				System.out.println("Number of attendee slots: " + camp.getCampInfo().getAttendeeSlots());
 				System.out.println("Number of committee slots: " + camp.getCampInfo().getCommitteeSlots());

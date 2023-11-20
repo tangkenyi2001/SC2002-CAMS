@@ -1,5 +1,9 @@
 package Entity;
 import java.util.*;
+
+import Manager.StaffManager;
+import Serializer.CampSerializer;
+
 import java.io.Serializable;
 
 public class Staff extends User implements Serializable{
@@ -28,6 +32,7 @@ public class Staff extends User implements Serializable{
 	
 	public void addToCreatedCamps(Camp aCamp){
 		createdCamps.add(aCamp);
+		
 	}
 
 	public ArrayList<Camp> getCreatedCamps(){
