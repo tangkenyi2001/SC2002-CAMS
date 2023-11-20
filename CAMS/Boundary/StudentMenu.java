@@ -55,6 +55,7 @@ public class StudentMenu{
                         camp = availableCamps.get(choice -1);
                         RegistrationHandler.registerCamp(student, camp);
                         System.out.println("Registered for camp " + camp.getCampInfo().getCampName() + ".");
+                        printMenu(student, campList);//for the case where he register as cc
                         break;
                     case 5:
                         ArrayList<Camp> enquiryCamps = ViewHandler.viewEnquiryAvailable(student);
