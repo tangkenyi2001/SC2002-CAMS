@@ -19,7 +19,9 @@ public class StaffViewHandler {
 				i +=1;
                 System.out.println("(" + i + ")" + " Camp Name: " + camp.getCampInfo().getCampName());
 			}
+            viewCampInfo(camps);
 		}
+
 	}
 
     public static void viewCreated(Staff aStaff){
@@ -38,9 +40,17 @@ public class StaffViewHandler {
 
     public static void viewCampInfo(Staff aStaff){
         int choice = IndexHelper.indexOfCamp();
-        if(choice !=0){
+        if(choice !=-1){
             Camp camp = aStaff.getCreatedCamps().get(choice);
-            camp.getCampInfo();
+            camp.printInfo();
+        }
+    }
+
+    public static void viewCampInfo(ArrayList<Camp> camps){
+        int choice = IndexHelper.indexOfCamp();
+        if(choice !=-1){
+            Camp camp = camps.get(choice);
+            camp.printInfo();
         }
     }
 

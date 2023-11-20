@@ -11,7 +11,7 @@ import Entity.Student;
 
 public class GenerateHandler {
 
-	public  static void generateReport(Camp camp)throws IOException{
+	public  static void generateReport(Camp camp) throws IOException{
 		int choice;	
 		int i=0;
 		File file =new File("out.txt");
@@ -30,7 +30,7 @@ public class GenerateHandler {
 			pw.println("Camp: " + camp.getCampInfo().getCampName()); // Print camp name
             pw.println("Attendees ");
 			for (i=0;i<camp.getAttendees().size();i++){
-				pw.print(i+1);
+				pw.print("("+(i+1)+")");
 				pw.println(camp.getAttendees().get(i).getName());
 			}
 			pw.close();
@@ -42,8 +42,8 @@ public class GenerateHandler {
 			pw.println("Camp: " + camp.getCampInfo().getCampName()); // Print camp name
             pw.println("Camp Committee ");
 			for (i=0;i<camp.getCommittee().size();i++){
-				pw.print(i+1);
-				pw.println(camp.getCommittee().get(i).getName());
+				pw.print("("+(i+1)+")");
+				pw.println(camp.getCommittee().get(i).getName() + " Points:"+camp.getCommittee().get(i).getPoints());
 			}
 			pw.close();
 		}

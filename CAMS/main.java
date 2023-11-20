@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 import Boundary.StaffMenu;
@@ -18,7 +19,7 @@ import Manager.SuggestionsManager;
 
 public class main {
 
-    public static void main(String arg[]) {
+    public static void main(String arg[]) throws IOException {
         //CampDatabase a = new CampDatabase();
         //LoginHandler.login();
         StudentManager studentManager=new StudentManager();

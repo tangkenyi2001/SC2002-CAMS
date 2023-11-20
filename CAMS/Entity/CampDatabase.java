@@ -18,7 +18,7 @@ public class CampDatabase implements Serializable{
 	}
 
 	public static ArrayList<Camp> getCamps() {
-		System.out.println("Retrieving Camps.");
+		//System.out.println("Retrieving Camps.");
 		return allCamps;
 	}
 

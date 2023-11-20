@@ -20,7 +20,19 @@ public class Camp implements Serializable{
         this.campSuggestions = new ArrayList<>();
 		this.blackList = new ArrayList<>();
 	}
-
+	public void printInfo(){
+		System.out.println("Camp Name: "+getCampInfo().getCampName());
+		System.out.println("Start Date: "+getCampInfo().getStartDate());
+		System.out.println("End Date: "+getCampInfo().getEndDate());
+		System.out.println("Registration Deadline: "+getCampInfo().getDeadline());
+		System.out.println("User Group: "+getCampInfo().getUserGroup());
+		System.out.println("Location: "+getCampInfo().getLocation());
+		System.out.println("Total Slots: "+getCampInfo().getTotalSlots());
+		System.out.println("Number of Committee Slots: "+getCampInfo().getCommitteeSlots());
+		System.out.println("Camp Description: "+getCampInfo().getDescription());
+		System.out.println("Staff-In_Charge: "+getCampInfo().getStaffIC());
+		System.out.println("Camp Visbility: "+getVisibility());
+	}
 	public CampInfo getCampInfo(){
 		return campInformation;
 	}

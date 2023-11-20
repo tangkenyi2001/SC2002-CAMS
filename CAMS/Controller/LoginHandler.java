@@ -1,5 +1,6 @@
 package Controller;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import Boundary.CampCommitteeMenu;
@@ -13,7 +14,7 @@ import Serializer.StudentSerializer;
 import Entity.*;
 
 public class LoginHandler {
-    public static void login(){
+    public static void login() throws IOException{
         String username,password;
         int domain;
         Scanner sc =new Scanner(System.in);

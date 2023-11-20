@@ -1,4 +1,5 @@
 package Boundary;
+import java.io.IOException;
 import java.util.*;
 
 import Controller.Beauty;
@@ -11,7 +12,7 @@ import Entity.Camp;
 import Entity.Staff;
 public class StaffMenu {
 
-    public static void printMenu(Staff aStaff, ArrayList<Camp> arrayList){
+    public static void printMenu(Staff aStaff, ArrayList<Camp> arrayList) throws IOException{
         Scanner sc = new Scanner(System.in);
         int choice;
         int i;
