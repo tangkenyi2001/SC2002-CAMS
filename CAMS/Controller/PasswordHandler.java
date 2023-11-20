@@ -12,12 +12,12 @@ public class PasswordHandler {
         Scanner sc = new Scanner(System.in);
          System.out.println("Change the default password: ");
         System.out.print("Enter your old password: ");
-        String oldPW = sc.nextLine().toUpperCase();        
+        String oldPW = sc.nextLine();        
         if (verifyOldPassword(aUser, oldPW)) {
             String newPW;
             do {
                 System.out.print("Enter your new password: ");
-                newPW = sc.nextLine().toUpperCase();
+                newPW = sc.nextLine();
         
                 if (newPW.equalsIgnoreCase("PASSWORD")) {
                     System.out.println("New Password cannot be the default password.");
@@ -25,7 +25,7 @@ public class PasswordHandler {
                     aUser.setPassword(newPW);
                     System.out.println("Password has been successfully changed.");
                 }
-            } while (newPW.equalsIgnoreCase("PASSWORD"));
+            } while (newPW.equalsIgnoreCase("password"));
             
         } else {
             System.out.println("Incorrect old password!");

@@ -17,48 +17,57 @@ public class CampInfo implements Serializable{
 	private String staffInCharge;
 
     public CampInfo(){
-        Scanner scanner = new Scanner(System.in);
+        	Scanner scanner = new Scanner(System.in);
 
-        System.out.println("1.Enter Camp Name: ");
+        	System.out.println("1.Enter Camp Name: ");
             this.campName=(scanner.next().toUpperCase());
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-			while (true) {
+			do {
 				System.out.println("2. Enter Start Date (dd/mm/yyyy): ");
 				String startDateStr = scanner.next();
 	
 				try {
 					this.startDate = LocalDate.parse(startDateStr, formatter);
-					break; // Break the loop if parsing is successful
+					if(startDate.isBefore(java.time.LocalDate.now())){
+					System.out.println("Start Date cannot be before Current Date! Try again!"); 
+						}
+					//break; // Break the loop if parsing is successful
 				} catch (Exception e) {
 					System.out.println("Invalid date format. Please try again.");
 				}
-			}
+			} while( startDate.isBefore(java.time.LocalDate.now())); 
 	
 			// Validate and set End Date
-			while (true) {
-				System.out.println("2. Enter End Date (dd/mm/yyyy): ");
+			do{
+				System.out.println("   Enter End Date (dd/MM/yyyy): ");
 				String endDateStr = scanner.next();
 	
 				try {
 					this.endDate = LocalDate.parse(endDateStr, formatter);
-					break; // Break the loop if parsing is successful
+					if( endDate.isBefore(startDate) ){
+					System.out.println("End Date cannot be before Start Date! Try again! "); 
+				}
+					//break; // Break the loop if parsing is successful
 				} catch (Exception e) {
 					System.out.println("Invalid date format. Please try again.");
 				}
-			}
+			} while ( endDate.isBefore(startDate) );
 	
 			// Validate and set Registration Deadline
-			while (true) {
-				System.out.println("3. Enter Camp Registration Closing Date (dd/mm/yyyy): ");
+			do {
+				System.out.println("3. Enter Camp Registration Closing Date (dd/MM/yyyy): ");
 				String regCloseDateStr = scanner.next();
 	
 				try {
 					this.registrationDeadline = LocalDate.parse(regCloseDateStr, formatter);
-					break; // Break the loop if parsing is successful
+					if((registrationDeadline.isAfter(startDate) || registrationDeadline.isEqual(startDate) )){
+						System.out.println("Registration Deadline must be before Start Date! Try Again!");
+					}
+					//break; // Break the loop if parsing is successful
 				} catch (Exception e) {
 					System.out.println("Invalid date format. Please try again.");
 				}
-			}
+			} while(registrationDeadline.isAfter(startDate) || registrationDeadline.isEqual(startDate) );
             
         System.out.println("4.Enter UserGroups allowed to join: ");
         System.out.println("  Enter School or Enter ANY if open to whole NTU: ");
@@ -97,14 +106,14 @@ public class CampInfo implements Serializable{
 	}
 	public void setStartDate() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Start Date (dd/mm/yyyy): ");
+		System.out.println("Enter Start Date (dd/MM/yyyy): ");
             String startDateStr = scanner.next();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");  
             this.startDate = LocalDate.parse(startDateStr, formatter); 
 	}
 	public void setEndDate() {
 		Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter End Date (dd/mm/yyyy): ");
+        System.out.println("Enter End Date (dd/MM/yyyy): ");
             String endDateStr = scanner.next();
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");  
             this.endDate = LocalDate.parse(endDateStr, formatter);  
@@ -118,7 +127,7 @@ public class CampInfo implements Serializable{
 	public void setDeadline() {
 		// TODO - implement campInformation.setDeadline
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Camp Registration Closing Date (dd/mm/yyyy): ");
+		System.out.println("Enter Camp Registration Closing Date (dd/MM/yyyy): ");
             String RegCloseDateStr = scanner.next();
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");  
             this.registrationDeadline= LocalDate.parse(RegCloseDateStr, formatter);  

@@ -31,7 +31,7 @@ public class CsvReader {
                 {
                     int indexofat=values[1].indexOf('@');
                     String id = values[1].substring(0,indexofat).toUpperCase();
-                    staffManager.addNewStaff(new Staff(id.toUpperCase(),values[0].toUpperCase(),"PASSWORD".toUpperCase(), values[2].toUpperCase()));
+                    staffManager.addNewStaff(new Staff(id.toUpperCase(),values[0].toUpperCase(),"password", values[2].toUpperCase()));
                 }
                 count++;//first loop dont add, if not will add Header in
                 
@@ -65,7 +65,7 @@ public class CsvReader {
                 if (count!=0)
                 {
                 String id = values[1].substring(0,indexofat).toUpperCase();
-                studentmanager.addStudent(new Student(id.toUpperCase(),values[0].toUpperCase(),"PASSWORD".toUpperCase(), values[2].toUpperCase()));
+                studentmanager.addStudent(new Student(id.toUpperCase(),values[0].toUpperCase(),"password", values[2].toUpperCase()));
                 }
                 count++;
             }

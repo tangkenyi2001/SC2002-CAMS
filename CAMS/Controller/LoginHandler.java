@@ -14,19 +14,24 @@ import Entity.*;
 
 public class LoginHandler {
     public static void login(){
-        String username,password,domain;
+        String username,password;
+        int domain;
         Scanner sc =new Scanner(System.in);
         System.out.println("CAMS APPLICATION 2023 ");
-        System.out.println("User Name: ");
-        System.out.println("Password: ");
-        System.out.println("Domain: ");
+        do{
+            do{
+                System.out.println("Enter Domain: ");
+                System.out.println("(1) Student ");
+                System.out.println("(2) Staff ");
+                domain=sc.nextInt();
+                sc.nextLine();
+            }while (domain!=1&&domain!=2);
         System.out.println("Enter User Name: ");
         username=sc.nextLine().toUpperCase();
+        }while (!VerificationHandler.verifyUser(username, domain));
+        
         System.out.println("Enter Password: ");
-        password=sc.nextLine().toUpperCase();
-        System.out.println("Enter Domain: ");
-        domain=sc.nextLine().toUpperCase();
-        //int status=VerificationHandler.verify(username, password, domain);
+        password=sc.nextLine();        
         User user=VerificationHandler.verify(username, password, domain);
          //-1 is non user
         //0 is student
@@ -44,7 +49,7 @@ public class LoginHandler {
         }
         
         else{
-            if (password.toUpperCase().equals("PASSWORD")){
+            if (password.equals("password")){
             do{
             
                 PasswordHandler.changePassword(user);
@@ -56,7 +61,7 @@ public class LoginHandler {
                     staffmanager.updateStaff((Staff)user);
                 }
                 password=user.getPassword();
-            }while (password.toUpperCase().equals("PASSWORD"));
+            }while (password.equals("password"));
             }
             i=0;
             if (user instanceof Student)
