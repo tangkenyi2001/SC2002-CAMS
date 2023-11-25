@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b837e82d-26ee-4885-9c33-08fc597882e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/CampCommitteeMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/CampCommitteeMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/StaffCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Boundary/StaffCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/StaffHandlerMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/StaffMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Boundary/StaffMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/StudentMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Boundary/StudentMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/Beauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/Beauty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/CampEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/CampEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/CampModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/CampModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/ClearDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/ClearDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/EnquiryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/EnquiryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/GenerateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/GenerateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/InitialiseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/InitialiseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/LoadDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/LoadDataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/LogoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/LogoutHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/PasswordHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/PasswordHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/RegistrationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/RegistrationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/SaveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/SaveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/StaffEnquiryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/StaffEnquiryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/StaffSuggestionsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/StaffSuggestionsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/StaffViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/StaffViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/SuggestionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/SuggestionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/VerificationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/VerificationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Controller/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/ViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/Camp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/Camp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/CampCommittee.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/CampCommittee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/CampDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/CampDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/CampInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/CampInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/Enquiry.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/Enquiry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Entity/Suggestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Entity/Suggestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/CampManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/CampManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Manager/CsvReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/EnquiriesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Manager/EnquiriesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/StaffManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Manager/StaffManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Manager/StudentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Manager/SuggestionsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Manager/SuggestionsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CampsDatabase.ser" beforeDir="false" afterPath="$PROJECT_DIR$/CampsDatabase.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StaffDatabase.ser" beforeDir="false" afterPath="$PROJECT_DIR$/StaffDatabase.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentDatabase.ser" beforeDir="false" afterPath="$PROJECT_DIR$/StudentDatabase.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staff_list (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student list(1) (4).csv" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2YfwVwcBkLAPkfUoQFKOASvzU3S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "newthor",
+    "last_opened_file_path": "C:/Users/tangk/Documents/GitHub/SC2002 Final",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b837e82d-26ee-4885-9c33-08fc597882e6" name="Changes" comment="" />
+      <created>1700929968789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700929968789</updated>
+      <workItem from="1700929969786" duration="975000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

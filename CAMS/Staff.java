@@ -27,7 +27,7 @@ public class Staff extends User {
 		createdCamps.add(aCamp);
 	}
 
-	public ArrayList<Camp> getCreatedCamps(){
+	public ArrayList<Camp>  getCreatedCamps(){
 		return createdCamps;
 	}
 }

@@ -1,21 +1,31 @@
+<<<<<<< Updated upstream:CAMS/Enquiry.java
 public class Enquiry{
+=======
+package Entity;
+import java.io.Serializable;
+import java.util.Scanner; 
 
-	private String studentName;
+public class Enquiry implements Serializable{
+>>>>>>> Stashed changes:CAMS/Entity/Enquiry.java
+
+	private Student student;
 	private String content;
 	private String reply;
-	private String camp;
+	private Camp camp;
 	private boolean processed;
+	private User replier;
 
-	public Enquiry(String name, String content, Camp camp){
-		this.studentName = name;
+	public Enquiry(Student student , String content, Camp camp){
+		this.student = student;
 		this.content = content;
-		this.camp = camp.getCampInfo().getCampName();
+		this.camp = camp;
 		this.reply = null;
-		this.processed = false;
+		this.processed=false;
+		this.replier = null;
 	}
 
-	public String getStudentName() {
-		return this.studentName;
+	public Student getStudent() {
+		return this.student;
 	}
 
 	public String getContent() {
@@ -26,7 +36,7 @@ public class Enquiry{
 		return this.reply;
 	}
 
-	public String getCamp() {
+	public Camp getCamp() {
 		return this.camp;
 	}
 
@@ -34,8 +44,8 @@ public class Enquiry{
 	 * 
 	 * @param String
 	 */
-	public void setStudentName(String String) {
-		this.studentName = String;
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 
 	/**
@@ -58,8 +68,8 @@ public class Enquiry{
 	 * 
 	 * @param String
 	 */
-	public void setCamp(String String) {
-		this.camp = String;
+	public void setCamp(Camp camp) {
+		this.camp = camp;
 	}
 
 	public void setProcessedTrue(){
@@ -69,4 +79,14 @@ public class Enquiry{
 	public boolean getProcessed(){
 		return this.processed;
 	}
+
+	public void setReplier(User user){
+		this.replier = user;
+	}
+
+	public User getReplier(){
+		return replier;
+	}
+
+	
 }

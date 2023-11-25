@@ -9,21 +9,43 @@ public class Camp {
 	private ArrayList<Enquiry> campEnquiries;
 	private ArrayList<Suggestions> campSuggestions;
 	private ArrayList<Student> blackList;
-	public Camp() {
-		this.campInformation = new CampInfo();
+	private Staff IC; 
+	public Camp(Staff aStaff) {
+		this.campInformation = new CampInfo(aStaff);
         this.attendees = new ArrayList<>();
         this.campCommittees = new ArrayList<>();
         this.visibility = false; // Default visibility is false
         this.campEnquiries = new ArrayList<>();
         this.campSuggestions = new ArrayList<>();
 		this.blackList = new ArrayList<>();
+		this.IC = aStaff;
 	}
+<<<<<<< Updated upstream:CAMS/Camp.java
 
+=======
+	public void printInfo(){
+		System.out.println("Camp Name: "+getCampInfo().getCampName());
+		System.out.println("Start Date: "+getCampInfo().getStartDate());
+		System.out.println("End Date: "+getCampInfo().getEndDate());
+		System.out.println("Registration Deadline: "+getCampInfo().getDeadline());
+		System.out.println("User Group: "+getCampInfo().getUserGroup());
+		System.out.println("Location: "+getCampInfo().getLocation());
+		System.out.println("Total Slots: "+getCampInfo().getTotalSlots());
+		System.out.println("Number of Committee Slots: "+getCampInfo().getCommitteeSlots());
+		System.out.println("Camp Description: "+getCampInfo().getDescription());
+		System.out.println("Staff-In_Charge: "+getCampInfo().getStaffIC().getName());
+		System.out.println("Camp Visbility: "+getVisibility());
+	}
+>>>>>>> Stashed changes:CAMS/Entity/Camp.java
 	public CampInfo getCampInfo(){
 		return campInformation;
 	}
 	public ArrayList<Student> getAttendees() {
 		return this.attendees;
+	}
+
+	public Staff getIC(){
+		return this.IC; 
 	}
 
 	
