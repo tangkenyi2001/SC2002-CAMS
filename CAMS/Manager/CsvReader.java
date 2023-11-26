@@ -7,8 +7,16 @@ import java.io.IOException;
 
 import Entity.Staff;
 import Entity.Student;
-
+/**
+ * The CsvReader class provides methods to read data from CSV files and populate
+ * manager classes with the information read from the CSV.
+ */
 public class CsvReader {
+    /**
+     * Reads data from the staff CSV file and pass into the StaffManager.
+     * Each staff record in the CSV file is expected to have three columns:
+     * name, email, and faculty.
+     */
     public static void readstaff(){
         String path = "C:\\Users\\tangk\\Documents\\GitHub\\SC2002 Final\\staff.csv";
         String line="";
@@ -43,6 +51,11 @@ public class CsvReader {
         }
 
     }
+    /**
+     * Reads  data from the student CSV file and pass into the StaffManager.
+     * Each student record in the CSV file is expected to have three columns:
+     * name, email, and faculty.
+     */
     public static void readstudent(){
          String path = "C:\\Users\\tangk\\Documents\\GitHub\\SC2002 Final\\student.csv";
          String line="";
