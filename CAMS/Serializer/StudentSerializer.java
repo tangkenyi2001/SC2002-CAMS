@@ -3,13 +3,25 @@ package Serializer;
 import java.util.ArrayList;
 import java.io.*;
 import Controller.*;
-import Entity.*; // this line may need to change accordingly to your own device //
+import Entity.*; 
+/**
+ * Represents a StudentSerializer.
+ * @author Etienne Borner
+ * @version 1.0
+ * @since 2023-11-26
+ */
 
 public class StudentSerializer extends Serializer {
     public StudentSerializer() {
         super();
     }
 
+    
+    /**
+     * save ArrayList of students to serialized file.
+     * @param o is the ArrayList of students to be Saved.
+     * @param filename is the StudentsDatabase Serialized file.
+     */
     public static void saveStudents(ArrayList<Student> o, String filename) {
         try {
             FileOutputStream fileOut = new FileOutputStream(filename);
@@ -22,6 +34,10 @@ public class StudentSerializer extends Serializer {
         }
     }
 
+     /**
+     * Retrieve ArrayList of students from serialized file.
+     * @param filename is the StudentsDatabase Serialized file.
+     */
     public static ArrayList<Student> getStudents(String fileName) {
         FileInputStream fi = null;
         ObjectInputStream os = null;
