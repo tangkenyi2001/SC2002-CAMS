@@ -11,8 +11,18 @@ import Manager.StudentManager;
 import Serializer.StaffSerializer;
 import Serializer.StudentSerializer;
 import Entity.*;
-
+/**
+ * Handles log in of CAMs
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class LoginHandler {
+    /**
+     * Prompts user to select domaina and enter password and ID
+     * Verifies password and ID and goes to respective user menu interface
+     * @throws IOException
+     */
     public static void login() throws IOException{
         String username,password;
         int domain;

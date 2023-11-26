@@ -86,7 +86,7 @@ public class StudentMenu{
             }
         else if(student.isCommittee()){
             System.out.println(Beauty.GREEN);
-            //Beauty.CCMenu();
+            Beauty.CCMenu();
             System.out.println("(1) View Available Camps");
             System.out.println("(2) View Registered Camps");
             System.out.println("(3) View Submitted Enquiries");

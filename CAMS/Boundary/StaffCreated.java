@@ -1,19 +1,16 @@
 package Boundary;
-/**
- * UI Menu for when staff clicks on view created camps
-@author Thor Jia Ying
-@version 1.0
-@since 2023-11-26
- */
+
 import java.io.IOException;
 import java.util.Scanner;
-import Controller.GenerateHandler;
-import Controller.IndexHelper;
-import Controller.StaffEnquiryHandler;
-import Controller.StaffSuggestionsHandler;
-import Controller.StaffViewHandler;
-import Entity.Staff;
 
+import Controller.*;
+import Entity.Staff;
+/**
+ * UI Menu for when staff clicks on view created camps
+ @author Thor Jia Ying
+ @version 1.0
+ @since 2023-11-26
+ */
 public class StaffCreated {
 /**
  * Method that prints out the menu
@@ -62,7 +59,7 @@ public class StaffCreated {
 
 
             }
-            //if (choice !=7) Beauty.backFunction();
+            if (choice !=7) Beauty.backFunction();
         } while(choice <5 && choice >0);
     }
 }

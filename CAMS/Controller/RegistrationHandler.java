@@ -5,8 +5,19 @@ import Entity.CampCommittee;
 import Entity.CampDatabase;
 import Entity.Student;
 import Manager.StudentManager;
+/**
+ * Takes care of all actions pertaining enquiries for staffs
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class RegistrationHandler {
-
+	/**
+	 * Prints available camps and prompts user to select camp to register for 
+	 * Also prompts user to select between attendee and committee member
+	 * Checks blacklists and if student already committee member of another camp
+	 * @param student Student user registering for camp
+	 */
 	public static void registerCamp(Student student){
 		Scanner sc = new Scanner(System.in);
 		int choice;
@@ -77,11 +88,20 @@ public class RegistrationHandler {
 			Updater.updateAll(camp.getIC(), student, null, null, camp);
 		} 
 	}
-
+	/**
+	 * Checks if there are overlapping dates between 2 camps
+	 * @param current 1st camp to compare
+	 * @param camp 2nd camp to compare
+	 * @return Returns true if date overlaps
+	 */
 	public static boolean checkOverlap(Camp current, Camp camp){
 		return (current.getCampInfo().getStartDate().isBefore(camp.getCampInfo().getEndDate()) && current.getCampInfo().getEndDate().isAfter(camp.getCampInfo().getStartDate()));
 	}
-
+	/**
+	 * Prompts user to select which camp to withdraw from and add student to respective blacklist
+	 * Checks if camp committee member of camp
+	 * @param student Student user withdrawing for camp
+	 */
 	public static void withdrawCamp(Student student){
 		Scanner sc = new Scanner(System.in);
 		student.viewRegistered(student);

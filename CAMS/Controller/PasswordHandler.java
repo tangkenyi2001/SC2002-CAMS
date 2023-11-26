@@ -10,9 +10,18 @@ import Entity.User;
 import Manager.StaffManager;
 import Manager.StudentManager;
 import Serializer.StudentSerializer;
-
+/**
+ * Handles password changing function of all types of users
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class PasswordHandler {
-
+    /**
+     * Prompts user to change default password
+     * @param aUser User changing password
+     * @throws IOException
+     */
     public static void changePassword(User aUser) throws IOException {
         Scanner sc = new Scanner(System.in);
          System.out.println("Change the default password: ");
@@ -44,7 +53,12 @@ public class PasswordHandler {
         mainMenu.printMainMenu();
         
     }
-
+    /**
+     * Verifies old password of user
+     * @param aUser User
+     * @param oldPassword User input of old password
+     * @return True or false based on verification
+     */
     private static boolean verifyOldPassword(User aUser, String oldPassword) {
         return aUser.getPassword().equals(oldPassword);
     }

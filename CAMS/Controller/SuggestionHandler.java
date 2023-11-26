@@ -12,9 +12,17 @@ import Manager.StaffManager;
 import Manager.StudentManager;
 import Manager.SuggestionsManager;
 import Serializer.SuggestionsSerializer;
-
+/**
+ * Takes care of all actions pertaining to suggestions for camp committee members
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class SuggestionHandler {
-
+	/**
+	 * Prints out suggestions that camp committee member has submitted
+	 * @param student Camp committee member that is viewing suggestion
+	 */
 	public static void viewSuggestion(Student student) {
 		int i=0;
 		if(student.getSuggestions().isEmpty()){
@@ -29,7 +37,11 @@ public class SuggestionHandler {
 		}
 		
 	}
-
+	/**
+	 * Takes in user input to edit already existing suggestion
+	 * Checks if suggestion is processed
+	 * @param student Camp committee member that is editing suggestion
+	 */
 	public static void editSuggestion(Student student) {
 		Scanner sc = new Scanner(System.in);
 		SuggestionHandler.viewSuggestion(student);
@@ -72,6 +84,11 @@ public class SuggestionHandler {
 		}
 		
 	}
+	/**
+	 * Gives user choice of which suggestion they would like to delete
+	 * Checks if suggestion is processed before deletion
+	 * @param student Camp committee member that is deleting suggestion
+	 */
 	public static void deleteSuggestion(Student student) {
 		Scanner sc = new Scanner(System.in);
 		SuggestionHandler.viewSuggestion(student);
@@ -102,7 +119,11 @@ public class SuggestionHandler {
 			}
 		}
 	}
-
+	/**
+	 * Calls suggestion constructor that prompts user for suggestion content
+	 * Stores new suggestion into its appropriate locations
+	 * @param student Camp committee member that is submitting suggestion
+	 */
 	public static void submitSuggestions(Student student) {
 		Suggestions newSuggestions;
 		newSuggestions= new Suggestions(student,student.getCampCommittee().getCommitteeOf());

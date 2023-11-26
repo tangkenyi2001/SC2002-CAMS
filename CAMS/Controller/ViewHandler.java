@@ -6,8 +6,19 @@ import Entity.CampDatabase;
 import Entity.Enquiry;
 import Entity.Staff;
 import Entity.Student;
+/**
+ * Takes care of viewing interface requirements for list of camps and enquiries
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class ViewHandler {
-	//Prints camps camp can register for
+	/**
+	 * Prints list of camps that user can register for based on the camp's visibility and faculty group
+	 * Also checks if student has already registered for camp, if so, will not show up on interface
+	 * @param student Currently logged in user
+	 * @return An array list of camps to extract camp that user selects
+	 */
 	public static ArrayList<Camp> viewRegisterAvailable(Student student){
 		LocalDate currentLocalDate = java.time.LocalDate.now();
 		ArrayList<Camp> campList = CampDatabase.getCamp();
@@ -27,7 +38,12 @@ public class ViewHandler {
 		}
 		return availableCamps;
 	}
-
+	/**
+	 * Prints list of camps that student can submit enquiries for
+	 * Should include available and already registered camps
+	 * @param student Currently logged in user
+	 * @return An array list of camps to extract camp that user selects
+	 */
 	public static ArrayList<Camp> viewEnquiryAvailable(Student student){	// Prints out the camps available to student, and returns the ArrayList of camp
 		ArrayList<Camp> campList = CampDatabase.getCamp();
 		ArrayList<Camp> availableCamps = new ArrayList<>();
@@ -43,7 +59,11 @@ public class ViewHandler {
 		}
 		return availableCamps;
 	}
-	
+	/**
+	 * Prints list of camps that user has not registered for but can
+	 * Also prints camp committee slots and attendee slots
+	 * @param student Currently logged in user
+	 */
 	public static void viewAvailableSlots(Student student){
 		ArrayList<Camp> campList = CampDatabase.getCamp();
 		ArrayList<Camp> myAvailable = new ArrayList<Camp>();
@@ -69,7 +89,9 @@ public class ViewHandler {
 				System.out.println("No Camps Available");
 			}
 	}
-		
+	/**
+	 * Prints all created camps
+	 */
 	public static void viewAll() {
 		int i=0;
 		ArrayList<Camp> camps;
@@ -84,7 +106,11 @@ public class ViewHandler {
 			}
 		}
 	}
-
+	/**
+	 * View all enquiries that student has submitted
+	 * Also includes reply if available
+	 * @param student Currently logged in user
+	 */
 	public static void viewEnquiries(Student student) {
 		if (student.getEnquiries().isEmpty()){ System.out.println("You have not submitted any enquiries!"); return;}
 		for(int i = 0; i < student.getEnquiries().size(); i++){
@@ -95,7 +121,11 @@ public class ViewHandler {
 			}
 		}	
 	}
-
+	/**
+	 * View all enquiries submitted for specific camp
+	 * Also includes reply if available
+	 * @param camp Camp to view enquiries for
+	 */
 	public static void viewEnquiries(Camp camp) {
 		for(int i = 0; i < camp.getEnquiries().size(); i++){
 			Enquiry enquiry = camp.getEnquiries().get(i);

@@ -6,8 +6,16 @@ import Manager.EnquiriesManager;
 import Manager.StaffManager;
 import Manager.StudentManager;
 import Manager.SuggestionsManager;
-
+/**
+ * Handles initialization of databases
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class LoadDataHandler {
+    /**
+     * Initializes database
+     */
     public static void loaddata() {
         StudentManager studentManager=new StudentManager();
         StaffManager staffManager=new StaffManager();

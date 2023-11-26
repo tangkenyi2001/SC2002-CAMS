@@ -3,13 +3,25 @@ package Controller;
 import Entity.User;
 import Manager.StaffManager;
 import Manager.StudentManager;
-// call this to check if item is in database
+/**
+ * Takes care of verification of user input ID and password
+ * Returns respective user if verified
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class VerificationHandler {
+    /**
+     * Verifies user input ID to check if user exists
+     * @param username User input ID
+     * @param domain Integer representing type of user
+     * @return
+     */
     public static boolean verifyUser(String username,int domain){
         if (domain==1)
         {
             StudentManager student =new StudentManager();
-            //gets the arraty list of students
+            //gets the array list of students
             int i=0;
 
             for (i=0;i<student.getStudents().size();i++)
@@ -45,6 +57,13 @@ public class VerificationHandler {
         }
         return false;
     }
+    /**
+     * Verifies password of user of ID
+     * @param username User input ID
+     * @param password User input password
+     * @param domain Integer representing type of user
+     * @return User of respective ID and password
+     */
     public static User verify(String username,String password, int domain){
         //-1 is non user
         //0 is student
@@ -85,7 +104,7 @@ public class VerificationHandler {
         if (domain==2)
         {
             StaffManager staff =new StaffManager();
-            //gets the arraty list of staffs
+            //gets the array list of staffs
             int i=0;
             for (i=0;i<staff.getStaff().size();i++)
             {

@@ -10,8 +10,17 @@ import Serializer.EnquiriesSerializer;
 import Serializer.StaffSerializer;
 import Serializer.StudentSerializer;
 import Serializer.SuggestionsSerializer;
-
+/**
+ * Saves all data
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class SaveHandler {
+    /**
+     * Initialize all databases
+     * Saves data of all databases
+     */
     public static void saveData(){
         StudentManager studentManager=new StudentManager();
         StaffManager staffManager=new StaffManager();
