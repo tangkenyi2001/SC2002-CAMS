@@ -45,7 +45,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Constructor for camp.
-	 * @param aStaff
+	 * @param aStaff Staff that created the camp.
 	 */
 	public Camp(Staff aStaff) {
 		this.campInformation = new CampInfo(aStaff);
@@ -76,7 +76,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Returns the camp information object of a camp.
-	 * @return
+	 * @return camp information.
 	 */
 	public CampInfo getCampInfo(){
 		return campInformation;
@@ -84,7 +84,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Returns the array list of students that signed up as attendees.
-	 * @return
+	 * @return list of students.
 	 */
 	public ArrayList<Student> getAttendees() {
 		return this.attendees;
@@ -92,7 +92,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Return the Staff in charge
-	 * @return
+	 * @return return staff object.
 	 */
 	public Staff getIC(){
 		return this.IC; 
@@ -100,7 +100,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Add the student object to the array list of attendees.
-	 * @param name
+	 * @param name student that registered to be attendee.
 	 */
 	public void addAttendees(Student name) {
 		this.attendees.add(name);
@@ -108,7 +108,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Return the array list of students that signed up as camp committee members.
-	 * @return
+	 * @return array list of committee members.
 	 */
 	public ArrayList<Student> getCommittee() {
 		return this.campCommittees;
@@ -116,7 +116,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Add the student to the array list of Camp Committee member.
-	 * @param name
+	 * @param name Student that signed up to be committee member.
 	 */
 	public void addCommittee(Student name) {
 		this.campCommittees.add(name);
@@ -124,7 +124,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Returns the value of visibility.
-	 * @return
+	 * @return true or false.
 	 */
 	public boolean getVisibility() {
 		return this.visibility;
@@ -132,14 +132,14 @@ public class Camp implements Serializable{
 
 	/**
 	 * Toggle the visibility of the camp.
-	 * @param visibility
+	 * @param visibility true or false.
 	 */
 	public void setVisibility(boolean visibility) {
         this.visibility = visibility;
     }
 	/**
 	 * Return the array list of enquiries that students have for the camp.
-	 * @return
+	 * @return array list of enquiries.
 	 */
 	public ArrayList<Enquiry> getEnquiries() {
         return this.campEnquiries;
@@ -147,7 +147,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Return the array list of suggestions that camp committee submitted.
-	 * @return
+	 * @return array list of suggestions.
 	 */
 	public ArrayList<Suggestions> getSuggestions() {
         return this.campSuggestions;
@@ -155,7 +155,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Add the enquiry to array list of enquiries.
-	 * @param anEnquiry
+	 * @param anEnquiry the enquiry to be added.
 	 */
 	public void addEnquiry(Enquiry anEnquiry) {
         this.campEnquiries.add(anEnquiry);
@@ -163,7 +163,7 @@ public class Camp implements Serializable{
 	
 	/**
 	 * Add the suggestion to array list of Suggestions.
-	 * @param aSuggestion
+	 * @param aSuggestion the suggestion to be added.
 	 */
 	public void addSuggestion(Suggestions aSuggestion) {
         this.campSuggestions.add(aSuggestion);
@@ -191,7 +191,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Add the student to the blacklist array list.
-	 * @param student
+	 * @param student student to be added.
 	 */
 	public void addBlackList(Student student) {
 		this.blackList.add(student);
@@ -199,7 +199,7 @@ public class Camp implements Serializable{
 
 	/**
 	 * Returns the arraylist of blacklist
-	 * @return
+	 * @return array list of students.
 	 */
 	public ArrayList<Student> getBlackList() {
 		return this.blackList;

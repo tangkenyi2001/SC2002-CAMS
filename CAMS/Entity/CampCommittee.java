@@ -28,7 +28,7 @@ public class CampCommittee implements Serializable{
 
 	/**
 	 * Constructor for Camp Committee member.
-	 * @param camp
+	 * @param camp the camp student registered for.
 	 */
 	public CampCommittee(Camp camp) {
 		super();
@@ -39,7 +39,7 @@ public class CampCommittee implements Serializable{
 
 	/**
 	 * Returns the camp that the student is a committe member of
-	 * @return
+	 * @return this Camp object
 	 */
 	public Camp getCommitteeOf() {
 		return this.CommitteeOf;
@@ -52,21 +52,21 @@ public class CampCommittee implements Serializable{
 	}
 	/**
 	 * Set the points
-	 * @param points
+	 * @param points number of points.
 	 */
 	public void setPoints(int points){
 		this.points = points;
 	}
 	/**
 	 * Returns the number of points this student has.
-	 * @return
+	 * @return this student's points.
 	 */
 	public int getPoints(){
 		return this.points;
 	}
 	/**
 	 * Returns the array list of suggestions that this committee member has made
-	 * @return
+	 * @return this student's suggestions
 	 */
 	public ArrayList<Suggestions> getSubmittedSuggestions(){
 		return this.submittedSuggestions;

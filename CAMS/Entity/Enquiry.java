@@ -39,9 +39,9 @@ public class Enquiry implements Serializable{
 
 	/**
 	 * Constructor for the enquiry.
-	 * @param student
-	 * @param content
-	 * @param camp
+	 * @param student This student object
+	 * @param content The content that student wants to submit
+	 * @param camp	Camp that the enquiry is meant for
 	 */
 	public Enquiry(Student student , String content, Camp camp){
 		this.student = student;
@@ -90,7 +90,7 @@ public class Enquiry implements Serializable{
 
 	/**
 	 * Set the content of the enquiry.
-	 * @param String
+	 * @param String Content of the enquiry
 	 */
 	public void setContent(String String) {
 		this.content = String;
@@ -98,7 +98,7 @@ public class Enquiry implements Serializable{
 
 	/**
 	 * Set the reply to the enquiry.
-	 * @param String 
+	 * @param String Reply to the enquiry
 	 */
 	public void setReply(String String) {
 		this.reply = String;
@@ -127,7 +127,7 @@ public class Enquiry implements Serializable{
 	}
 	/**
 	 * Set the replier.
-	 * @param user
+	 * @param user the user that replied
 	 */
 	public void setReplier(User user){
 		this.replier = user;

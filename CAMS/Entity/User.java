@@ -30,10 +30,10 @@ public class User implements Serializable{
 
 	/**
 	 * Constructor for User.
-	 * @param id
-	 * @param name
-	 * @param password
-	 * @param faculty
+	 * @param id the part before '@' of User's email.
+	 * @param name	Name of user.
+	 * @param password password set by the user.
+	 * @param faculty faculty that the user belongs to.
 	 */
 	public User(String id, String name, String password, String faculty) {
 		this.id = id;
@@ -65,7 +65,7 @@ public class User implements Serializable{
 
 	/**
 	 * Sets the name of user.
-	 * @param Name
+	 * @param Name the name that user enters.
 	 */
 	public void setName(String Name) {
 		this.name = Name;
@@ -81,7 +81,7 @@ public class User implements Serializable{
 
 	/**
 	 * Set the password of user.
-	 * @param Password
+	 * @param Password password keyed in.
 	 */
 	public void setPassword(String Password) {
 		this.password = Password;
@@ -96,7 +96,7 @@ public class User implements Serializable{
 
 	/**
 	 * Set the faculty of user.
-	 * @param Faculty
+	 * @param Faculty Faculty of user.
 	 */
 	public void setFaculty(String Faculty) {
 		this.faculty = Faculty;

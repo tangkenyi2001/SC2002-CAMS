@@ -20,10 +20,10 @@ public class Staff extends User implements Serializable{
 	// default constructor when staff is first initialised
 	/**
 	 * Constructor for the Staff.
-	 * @param id
-	 * @param name
-	 * @param password
-	 * @param faculty
+	 * @param id id of the Staff.
+	 * @param name Name of Staff.
+	 * @param password	Password of staff.
+	 * @param faculty Faculty of staff.
 	 */
 	public Staff(String id, String name, String password, String faculty) {
 		super(id,name,password,faculty);

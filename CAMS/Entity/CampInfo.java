@@ -58,7 +58,7 @@ public class CampInfo implements Serializable{
 	static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	/**
 	 * Constructor for camp information
-	 * @param staff
+	 * @param staff Staff that creaed the camp
 	 */
     public CampInfo(Staff staff){
 			setCampName();
