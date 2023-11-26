@@ -6,8 +6,21 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import Entity.Camp;
-
+/**
+ * The GenerateEnquiry class implements the generateReport interface to generate the report for enquiries.
+ *
+ * @author Tang Ken Yi
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class GenerateEnquiry implements generateReport{
+
+    /**
+     * Generates the enquiry report for the selected camp.
+     *
+     * @param camp The camp for which the enquiry report is generated for.
+     * @throws IOException If an I/O error occurs while writing the report to a file.
+     */
     public  static void generateReport(Camp camp) throws IOException{
             int i=0;
             File file =new File("Enquries.txt");
