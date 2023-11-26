@@ -2,13 +2,26 @@ package Serializer;
 
 import java.util.ArrayList;
 import java.io.*;
-import Controller.*; // this line may need to change accordingly to your own device //
+import Controller.*; 
 import Entity.Suggestions;
 
+
+/**
+ * Represents a SuggestionsSerializer.
+ * @author Etienne Borner
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class SuggestionsSerializer extends Serializer {
     public SuggestionsSerializer() {
         super();
     }
+
+     /**
+     * save ArrayList of Suggestions to serialized file.
+     * @param o is the ArrayList of Suggestions to be Saved.
+     * @param filename is the SuggestionsDatabase Serialized file.
+     */
 
     public static void saveSuggestions(ArrayList<Suggestions> o, String filename) {
         try {
@@ -22,6 +35,10 @@ public class SuggestionsSerializer extends Serializer {
         }
     }
 
+     /**
+     * Retrieve ArrayList of Suggestions from serialized file.
+     * @param filename is the SuggestionsDatabase Serialized file.
+     */
     public static ArrayList<Suggestions> getSuggestions(String fileName) {
         FileInputStream fi = null;
         ObjectInputStream os = null;
