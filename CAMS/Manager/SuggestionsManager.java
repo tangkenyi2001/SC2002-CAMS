@@ -7,11 +7,23 @@ import Controller.*;
 import Entity.Enquiry;
 import Entity.Suggestions;
 import Serializer.*; 
-
-public class SuggestionsManager implements Serializable {
+/**
+ * Represents a SuggestionsManager.
+ * 
+ * @author Etienne Borner
+ * @version 1.0
+ * @since 2023-11-26
+ */
+public class SuggestionsManager {
+	/**
+	* ArrayList consisting of suggestions.
+	*/
     private static ArrayList<Suggestions> suggestions;
     static SuggestionsSerializer s = new SuggestionsSerializer(); 
 
+     /**
+     * Creates a new SuggestionsManager.
+     */
 public SuggestionsManager() {
 
     suggestions = SuggestionsSerializer.getSuggestions("SuggestionsDatabase.ser"); // not sure if it should be CampSerializer here or s (TBC) // 
@@ -20,24 +32,35 @@ public SuggestionsManager() {
         }
 }
 
+    /**
+     * Adds newSuggestion to ArrayList, saves this suggestion to SuggestionsDatabase serialized file.
+     * @param newSuggestion that is to be added to ArrayList of suggestions.
+     */
 public static void addSuggestion(Suggestions newSuggestion) {
     suggestions.add(newSuggestion);
     SuggestionsSerializer.saveSuggestions(suggestions, "SuggestionsDatabase.ser");
-   // System.out.println("Suggestions Successfully Saved.");
 }
+     /**
+     * Gets the ArrayList of suggestions.
+     * @return returns the ArrayList of suggestions.
+     */
 public static ArrayList<Suggestions> getSuggestions() {
-		//System.out.println("Retrieving Suggestions.");
 		return suggestions;
 	}
-public static void clearSuggestion() {
-    // Clear the student list
-    suggestions.clear();
 
-    // Save the empty list to the serialized file
+     /**
+     * Clears the ArrayList of Suggestions.
+     * Saves the empty ArrayList of Suggestions to SuggestionsDatabase serialized file. 
+     */
+public static void clearSuggestion() {
+    suggestions.clear();
     SuggestionsSerializer.saveSuggestions(suggestions, "SuggestionsDatabase.ser");
-    //System.out.println("Suggestions Database Cleared.");
 }
 
+    /**
+     * @param suggestion to be updated. 
+     * Suggestion to be updated is saved to SuggestionsDatabase serialized file.
+     */
 public static void update(Suggestions suggestion){
     int i=0;
     for (i=0;i<getSuggestions().size();i++)
