@@ -9,10 +9,20 @@ import Entity.Enquiry;
 import Entity.Staff;
 import Entity.User;
 import Manager.EnquiriesManager;
-
+/**
+ * Takes care of all actions pertaining enquiries for staffs
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class StaffEnquiryHandler implements AdminHandlerMenu{
     static Scanner sc = new Scanner(System.in);
-
+	/**
+	 * Prints enquiry of selected created camp of staff
+	 * Also provides option to reply to enquiry
+	 * @param aStaff Staff user
+	 * @param index Index of created camp of staff to view enquiries of
+	 */
     public static void view(Staff aStaff, int index){
 		ArrayList<Camp> createdCamps = aStaff.getCreatedCamps();
 		Camp aCamp = createdCamps.get(index);
@@ -35,7 +45,12 @@ public class StaffEnquiryHandler implements AdminHandlerMenu{
 		process(aStaff,thisEnquiry.get(choice));
 		}	
 	}
-
+	/**
+	 * Prompts user for reply to enquiry and change processed status
+	 * Checks if enquiry has already been processed
+	 * @param aStaff Staff user
+	 * @param enquiry Enquiry to be processed
+	 */
     public static void process(User aStaff,Enquiry enquiry) {
 		if(!enquiry.getProcessed()){
 			System.out.println("Enter reply: ");

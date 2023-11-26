@@ -5,23 +5,11 @@ import Entity.Camp;
 import Entity.Staff;
 import Manager.StaffManager;
 import Serializer.CampSerializer;
-import Entity.CampDatabase;
-/**
- * The CampEditor class provides methods for editing camp information.
- * It allows a staff member to edit information such as dates, deadline, description, slots, visibility, and user group.
- * A staff can only edit a camp he/she is in charge of
- *
- * @author Tang Ken Yi
- * @version 1.0
- * @since 2023-11-26
- */
+import Entity.CampDatabase; 
+
 public class CampEditor {
     static Scanner sc = new Scanner(System.in);
-    /**
-     * Allows the staff to choose a camp that he created and edit it.
-     *
-     * @param aStaff The staff member initiating the camp editing.
-     */
+
     public static void editCamp(Staff aStaff) {
 		StaffViewHandler.viewCreated(aStaff);
 		if(aStaff.getCreatedCamps().isEmpty()){ Beauty.backFunction();
@@ -66,49 +54,28 @@ public class CampEditor {
             Beauty.backFunction();
         }while(choice<7 && choice>0);
 	}
-    /**
-     * Edits the start and end dates of the camp.
-     *
-     * @param aCamp The camp that the staff wants to edit.
-     */
     public static void editDates(Camp aCamp){
         aCamp.getCampInfo().setStartDate();
         aCamp.getCampInfo().setEndDate();
         System.out.println("Dates successfully changed!");
     }
-    /**
-     * Edits the registration deadline of the camp.
-     *
-     * @param aCamp The camp that the staff wants to edit.
-     */
+
     public static void editDeadline(Camp aCamp){
         aCamp.getCampInfo().setDeadline();
         System.out.println("Deadline successfully changed!");
     }
-    /**
-     * Edits the description of the camp.
-     *
-     * @param aCamp The camp that the staff wants to edit.
-     */
+
     public static void editDescription(Camp aCamp){
         aCamp.getCampInfo().setDescription();
         System.out.println("Description successfully changed!");
     }
-    /**
-     * Edits the total number of slots and committee slots of the camp.
-     *
-     * @param aCamp The camp that the staff wants to edit.
-     */
+
     public static void editSlots(Camp aCamp){
         aCamp.getCampInfo().setTotalSlots();
         aCamp.getCampInfo().setCommitteeSlots();
         System.out.println("Slots successfully changed!");
     }
-    /**
-     * Toggles the visibility of the camp only if there are no attendees or committee members.
-     *
-     * @param aCamp The camp that the staff wants to edit.
-     */
+
     public static void editVisibility(Camp aCamp) {
         // if no attendee/committe, then can toggle
         if( aCamp.getAttendees().isEmpty() && aCamp.getCommittee().isEmpty() ){             //i
@@ -128,11 +95,7 @@ public class CampEditor {
             System.out.println("Error : There are attendees or Camp committe members registered!");
         }
     }
-    /**
-     * Edits the user group of the camp.
-     *
-     * @param aCamp The camp that the staff wants to edit.
-     */
+
     public static void editUserGroup(Camp aCamp) {
         aCamp.getCampInfo().setUserGroup();
         System.out.println("UserGroup successfully changed!");

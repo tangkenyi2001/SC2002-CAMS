@@ -11,21 +11,10 @@ import Manager.StudentManager;
 import Serializer.EnquiriesSerializer;
 import Serializer.SuggestionsSerializer;
 
-/**
- * The EnquiryHandler class provides methods to handle student enquiries.
- * Students can edit, submit, and delete enquiries.
- *
- * @author Tang Ken Yi
- * @version 1.0
- * @since 2023-11-26
- */
+
 public class EnquiryHandler {
 
-	/**
-	 * Edits the selected enquiry for the specific student.
-	 *
-	 * @param student The student who wants to edit an enquiry he/she made.
-	 */
+
 	public static void editEnquiry(Student student){
 		Scanner sc = new Scanner(System.in);
 		int choice;
@@ -54,11 +43,7 @@ public class EnquiryHandler {
 	}
 
 
-	/**
-	 * Submits a new enquiry for the specific student.
-	 *
-	 * @param student The student submitting the enquiry.
-	 */
+	
 	public static void submitEnquiry(Student student) {
 		ArrayList<Camp> enquiryCamps = ViewHandler.viewEnquiryAvailable(student);
 		if (enquiryCamps.isEmpty()){
@@ -94,11 +79,7 @@ public class EnquiryHandler {
 		}
 		
 	}
-	/**
-	 * Deletes the selected enquiry for the specific student.
-	 *
-	 * @param student The student who wants to delete an enquiry he/she made.
-	 */
+
 	public static void deleteEnquiry(Student student){
 		ViewHandler.viewEnquiries(student);
 		int choice;

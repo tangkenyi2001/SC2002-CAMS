@@ -8,9 +8,19 @@ import Entity.Camp;
 import Entity.Staff;
 import Entity.Suggestions;
 import Manager.SuggestionsManager;
-
+/**
+ * Takes care of all actions pertaining suggestions for staffs
+ * @author Randall Chiang Tian Cong
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class StaffSuggestionsHandler implements AdminHandlerMenu{
-    
+    /**
+	 * Prints suggestions of selected created camp of staff
+	 * Also provides option to approve suggestions
+	 * @param aStaff Staff user
+	 * @param index Index of created camp of staff to view suggestions of
+	 */
     public static void view(Staff aStaff, int index){
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Camp> createdCamps = aStaff.getCreatedCamps();
@@ -31,8 +41,11 @@ public class StaffSuggestionsHandler implements AdminHandlerMenu{
 			process(thisSuggestion.get(choice));
 		}
 	}
-
-
+	/**
+	 * Approves suggestion and updates information in appropriate locations
+	 * Checks if suggestion has already been approved
+	 * @param aSuggestion Suggestion to be processed
+	 */
 	public static void process(Suggestions aSuggestion) {
 		if(!aSuggestion.getApproval()){
 				aSuggestion.setApproval();
