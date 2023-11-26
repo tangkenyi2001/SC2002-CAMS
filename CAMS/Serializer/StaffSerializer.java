@@ -2,13 +2,24 @@ package Serializer;
 
 import java.util.ArrayList;
 import java.io.*;
-import Controller.*; // this line may need to change accordingly to your own device //
+import Controller.*; 
 import Entity.*;
+/**
+ * Represents a StaffSerializer.
+ * @author Etienne Borner
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class StaffSerializer extends Serializer {
     public StaffSerializer() {
         super();
     }
 
+     /**
+     * save ArrayList of staff to serialized file.
+     * @param o is the ArrayList of staffs to be Saved.
+     * @param filename is the StaffsDatabase Serialized file.
+     */
     public static void saveStaffs(ArrayList<Staff> o, String filename) {
         try {
             FileOutputStream fileOut = new FileOutputStream(filename);
@@ -21,6 +32,10 @@ public class StaffSerializer extends Serializer {
         }
     }
 
+     /**
+     * Retrieve ArrayList of staffs from serialized file.
+     * @param filename is the StaffsDatabase Serialized file.
+     */
     public static ArrayList<Staff> getStaffs(String fileName) {
         FileInputStream fi = null;
         ObjectInputStream os = null;
@@ -28,7 +43,7 @@ public class StaffSerializer extends Serializer {
         try {
             fi = new FileInputStream(fileName);
             os = new ObjectInputStream(fi);
-            staffs = ((ArrayList<Staff>) os.readObject()); // type safety but i think does not matter // 
+            staffs = ((ArrayList<Staff>) os.readObject()); 
         } catch (FileNotFoundException e) {
             // e.printStackTrace();
         } catch (EOFException e) {
