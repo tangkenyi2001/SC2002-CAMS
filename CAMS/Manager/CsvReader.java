@@ -18,7 +18,7 @@ public class CsvReader {
      * name, email, and faculty.
      */
     public static void readstaff(){
-        String path = "C:\\Users\\tangk\\Documents\\GitHub\\SC2002 Final\\staff.csv";
+        String path = "C:\\Users\\tangk\\Documents\\GitHub\\SC2002-Final\\staff.csv";
         String line="";
         StaffManager staffManager=new StaffManager();
         int count=0;
@@ -57,7 +57,7 @@ public class CsvReader {
      * name, email, and faculty.
      */
     public static void readstudent(){
-         String path = "C:\\Users\\tangk\\Documents\\GitHub\\SC2002 Final\\student.csv";
+         String path = "C:\\Users\\tangk\\Documents\\GitHub\\SC2002-Final\\student.csv";
          String line="";
          StudentManager studentmanager=new StudentManager();
          int count=0;

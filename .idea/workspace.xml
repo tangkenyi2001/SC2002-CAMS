@@ -5,86 +5,224 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b837e82d-26ee-4885-9c33-08fc597882e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Boundary/AdminHandlerMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/AdminHandlerMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/StaffCreated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/StaffCreated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/StaffMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/StaffMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/StudentMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/StudentMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/mainMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boundary/mainMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/StaffCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Boundary/StaffCreated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Boundary/StudentMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Boundary/StudentMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/InitialiseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/InitialiseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/LoadDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/LoadDataHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/LogoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/LogoutHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/PasswordHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/PasswordHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/RegistrationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/RegistrationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/SaveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/SaveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/StaffEnquiryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/StaffEnquiryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/StaffSuggestionsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/StaffSuggestionsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/StaffViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/StaffViewHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/SuggestionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/SuggestionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/Updater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/VerificationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/VerificationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMS/Controller/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/CAMS/Controller/ViewHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Beauty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Beauty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CampCommitteeEnquiryHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CampCommitteeEnquiryHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CampEditor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CampEditor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CampModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CampModifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ClearDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ClearDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/EnquiryHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/EnquiryHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateAll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateAll.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateAttendees.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateAttendees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateCampCommittee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateCampCommittee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateEnquiry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateEnquiry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/GenerateHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/IndexHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/IndexHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/InitialiseHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/InitialiseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LoadDataHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LoadDataHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LoginHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LoginHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LogoutHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LogoutHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/PasswordHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/PasswordHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/RegistrationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/RegistrationHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/SaveHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/SaveHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StaffEnquiryHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StaffEnquiryHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StaffSuggestionsHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StaffSuggestionsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StaffViewHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StaffViewHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/SuggestionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/SuggestionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Updater.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Updater.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/VerificationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/VerificationHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ViewHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ViewHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/generateReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/generateReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.syncinfo.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CAMS/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CAMS/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CAMS/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CAMS/.syncinfo.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/1.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1955460341.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1955460341.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CAMS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Camp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Camp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampCommittee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampCommitteeMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampModifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/CampModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Enquiries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Enquiries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Enquiry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/EnquiryHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/GenerateHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/PasswordHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/PasswordHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/RegistrationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/StaffCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/StaffCreated.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/StaffMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/StaffMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/StudentMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/SuggestionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Suggestions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/Suggestions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/ViewCampMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/ViewEnquiryMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/ViewHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/ViewHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/ViewRegisteredMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/Controller/Beauty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/Controller/class-use/Beauty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/Controller/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/Controller/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/Controller/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/script-dir/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/doc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMS/mainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/AdminHandlerMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/AdminHandlerMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/StaffCreated.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/StaffCreated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/StaffMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/StaffMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/StudentMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/StudentMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/mainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Boundary/mainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Camp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/CampCommittee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/CampCommitteeMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/CampDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/CampEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/CampInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/CampModifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/Beauty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/Beauty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/CampCommitteeEnquiryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/CampCommitteeEnquiryHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/CampEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/CampEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/CampModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/CampModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/ClearDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/ClearDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/EnquiryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/EnquiryHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/GenerateAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/GenerateAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/GenerateEnquiry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/GenerateEnquiry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/IndexHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/IndexHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/InitialiseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/InitialiseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/LoadDataHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/LoadDataHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/LogoutHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/LogoutHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/PasswordHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/PasswordHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/RegistrationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/RegistrationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/SaveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/SaveHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/StaffEnquiryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/StaffEnquiryHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/StaffSuggestionsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/StaffSuggestionsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/StaffViewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/StaffViewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/SuggestionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/SuggestionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/Updater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/Updater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/VerificationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/VerificationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/ViewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/ViewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/generateReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Controller/generateReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Enquiries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Enquiry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/EnquiryHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Camp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Camp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/CampCommittee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/CampCommittee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/CampDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/CampDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/CampInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/CampInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Enquiry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Enquiry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Suggestions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/Suggestions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/GenerateHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/CsvReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/CsvReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/EnquiriesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/EnquiriesManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/StaffManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/StaffManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/StudentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/StudentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/SuggestionsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Manager/SuggestionsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/PasswordHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/RegistrationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Serializer/EnquiriesSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SC2002 Final/Serializer/EnquiriesSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/StaffCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/StaffMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/StudentMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/SuggestionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/Suggestions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/ViewCampMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/ViewEnquiryMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/ViewHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/ViewRegisteredMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/Controller/Beauty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/Controller/class-use/Beauty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/Controller/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/Controller/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/Controller/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/script-dir/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/doc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SC2002 Final/mainMenu.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +252,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/tangk/Documents/GitHub/SC2002-Final",
+    "last_opened_file_path": "C:/Users/tangk/Downloads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,6 +260,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tangk\Documents\GitHub\SC2002-Final\CAMS" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SC2002-Final" />
@@ -149,7 +292,7 @@
       <workItem from="1700983605083" duration="369000" />
       <workItem from="1700985468744" duration="1773000" />
       <workItem from="1700987308015" duration="1741000" />
-      <workItem from="1700991227329" duration="4782000" />
+      <workItem from="1700991227329" duration="5982000" />
     </task>
     <servers />
   </component>
