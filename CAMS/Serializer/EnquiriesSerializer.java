@@ -2,16 +2,29 @@ package Serializer;
 
 import java.util.ArrayList;
 
-import Controller.*; // this line may need to change accordingly to your own device //
+import Controller.*; 
 import Entity.Enquiry;
 
 import java.io.*;
-
+/**
+ * Represents a EnquiriesSerializer.
+ * @author Etienne Borner
+ * @version 1.0
+ * @since 2023-11-26
+ */
 public class EnquiriesSerializer extends Serializer {
+    /**
+     * Creates an EnquiriesSerializer.
+     */
     public EnquiriesSerializer() {
         super();
     }
 
+     /**
+     * save ArrayList of enquiries to serialized file.
+     * @param o is the ArrayList of enquiries to be Saved.
+     * @param filename is the EnquiriesDatabase Serialized file.
+     */
     public static void saveEnquiries(ArrayList<Enquiry> o, String filename) {
         try {
             FileOutputStream fileOut = new FileOutputStream(filename);
@@ -23,6 +36,10 @@ public class EnquiriesSerializer extends Serializer {
             ex.getMessage();
         }
     }
+     /**
+     * Retrieve ArrayList of enquiries from serialized file.
+     * @param filename is the EnquiriesDatabase Serialized file.
+     */
 
     public static ArrayList<Enquiry> getEnquiries(String fileName) {
         FileInputStream fi = null;
@@ -31,7 +48,7 @@ public class EnquiriesSerializer extends Serializer {
         try {
             fi = new FileInputStream(fileName);
             os = new ObjectInputStream(fi);
-            enquiries = ((ArrayList<Enquiry>) os.readObject()); // type safety but i think it does not matter // 
+            enquiries = ((ArrayList<Enquiry>) os.readObject()); 
         } catch (FileNotFoundException e) {
             // e.printStackTrace();
         } catch (EOFException e) {
