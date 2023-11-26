@@ -6,28 +6,53 @@ import java.util.ArrayList;
 import Controller.*; 
 import Entity.*;
 import Serializer.*; 
-
-public class StaffManager implements Serializable{
+/**
+ * Represents a StaffManager.
+ * 
+ * @author Etienne Borner
+ * @version 1.0
+ * @since 2023-11-26
+ */
+public class StaffManager {
+    /**
+     * Creates an ArrayList of Staff.
+     */
     private static ArrayList<Staff> staffs;
     static StaffSerializer s = new StaffSerializer();
 
-
+/**
+* Creates a new StaffManager.
+* If ArrayList is empty, will create new ArrayList of Staff. 
+*/
 public StaffManager() {
 
-    staffs = StaffSerializer.getStaffs("StaffDatabase.ser"); // not sure if it should be StaffSerializer here or s (TBC) // 
+    staffs = StaffSerializer.getStaffs("StaffDatabase.ser");  
     if (staffs == null) {
         staffs = new ArrayList<Staff>();
         }
 }
 
+/**
+* Add a new staff to the ArrayList of staff.
+* @param newStaff is the newly created Staff
+* newly created staff is added to the StaffDatabase serialized file. 
+*/
 public static void addNewStaff(Staff newStaff) {
     staffs.add(newStaff);
     StaffSerializer.saveStaffs(staffs, "StaffDatabase.ser");
-    //System.out.println("Staff Successfully Saved.");
 }
+/**
+* Gets the ArrayList of staffs.
+* @return returns the ArrayList of staffs.
+*/
 public static ArrayList<Staff> getStaff(){
     return staffs;
 }
+
+/**
+* Saves the changes made by the staff. 
+* @param staff to be updated. 
+*/
 public static void updateStaff(Staff staff){
     int i=0;
     for (i=0;i<getStaff().size();i++)
@@ -39,13 +64,12 @@ public static void updateStaff(Staff staff){
                     }
                     StaffSerializer.saveStaffs(getStaff(), "StaffDatabase.ser");
 }
+/**
+* Clear the ArrayList of staffs. 
+*/
 public static void clearStaffs() {
-    // Clear the staffs list
     StaffManager.staffs.clear();
-
-    // Save the empty list to the serialized file
     StaffSerializer.saveStaffs(staffs, "StaffDatabase.ser");
-    //System.out.println("Staff Database Cleared.");
 }
 
 } 
